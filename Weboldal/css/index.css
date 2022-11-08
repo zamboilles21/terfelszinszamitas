@@ -10,12 +10,13 @@ a:link {
   
   a:hover {
     text-decoration: none;
-    color: black;
+    color: red;
   }
   
   a:active {
-    text-decoration: none;
-    color: black;
+    background-color: orangered;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 .flex-container {
     display: flex;
@@ -31,6 +32,29 @@ a:link {
     justify-content: center;
     text-align: center;
     text-decoration: none;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 150px;
+    grid-row-gap: 150px;
+    background-color: #666;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+.div1 img{
+    width: 400px;
+    height: 317px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    align-self: center;
+}
+.div2 img{
+    width: 288px;
+    height: 433px;
 }
 body{
     background-image: url(../HelperImages/flat-geometric-shapes-background_23-2148380467.webp);
