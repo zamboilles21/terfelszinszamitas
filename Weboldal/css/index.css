@@ -1,0 +1,37 @@
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: black;
+  }
+.flex-container {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav{
+    background-color: orange;
+    
+    height: 75px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+body{
+    background-image: url(../HelperImages/flat-geometric-shapes-background_23-2148380467.webp);
+}
