@@ -63,6 +63,26 @@ namespace TerFelSzoft.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chooseashape {
+            get {
+                object obj = ResourceManager.GetObject("Chooseashape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chooseashape2 {
+            get {
+                object obj = ResourceManager.GetObject("Chooseashape2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deltoid {
             get {
                 object obj = ResourceManager.GetObject("deltoid", resourceCulture);
@@ -106,6 +126,16 @@ namespace TerFelSzoft.Properties {
         internal static System.Drawing.Bitmap kor {
             get {
                 object obj = ResourceManager.GetObject("kor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modern_art {
+            get {
+                object obj = ResourceManager.GetObject("modern_art", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,26 @@ namespace TerFelSzoft.Properties {
         internal static System.Drawing.Bitmap triangle {
             get {
                 object obj = ResourceManager.GetObject("triangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tukrozott_choose_a_shape {
+            get {
+                object obj = ResourceManager.GetObject("tukrozott_choose_a_shape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tukrozott_choose_a_shape1 {
+            get {
+                object obj = ResourceManager.GetObject("tukrozott_choose_a_shape1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

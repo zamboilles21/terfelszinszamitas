@@ -113,5 +113,20 @@
   <ItemGroup>
     <None Include="bin\Debug\triangle.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chooseashape2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chooseashape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tukrozott_choose_a_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tukrozott_choose_a_shape1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern_art.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

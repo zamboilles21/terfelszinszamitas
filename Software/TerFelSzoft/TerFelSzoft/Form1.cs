@@ -18,6 +18,10 @@ namespace TerFelSzoft
         public Form1()
         {
             InitializeComponent();
+            
+            pctbx_alakzat.Image = Properties.Resources.modern_art;
+            rchtxtbx_egyenlet.SelectAll();
+            rchtxtbx_egyenlet.SelectionAlignment = HorizontalAlignment.Center;
         }
 
         private void btn_calc_Click(object sender, EventArgs e)
@@ -27,6 +31,27 @@ namespace TerFelSzoft
 
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)
         {
+           
+            lbl_input_value_1.Visible = false;
+            lbl_input_value_2.Visible = false;
+            lbl_input_value_3.Visible = false;
+            lbl_input_value_4.Visible = false;
+            lbl_input_value_5.Visible = false;
+            txtbx_input_value_1.Visible = false;
+            txtbx_input_value_2.Visible = false;
+            txtbx_input_value_3.Visible = false;
+            txtbx_input_value_4.Visible = false;
+            txtbx_input_value_5.Visible = false;
+            lbl_mertekegyseg_1.Visible = false;
+            lbl_mertekegyseg_2.Visible = false;
+            lbl_mertekegyseg_3.Visible = false;
+            lbl_mertekegyseg_4.Visible = false;
+            lbl_mertekegyseg_5.Visible = false;
+            lbl_result_1.Visible = false;
+            lbl_result_2.Visible = false;
+            txtbx_result_1.Visible = false;
+            txtbx_result_2.Visible = false;
+
             alakzat = combo_alakzatok.SelectedItem.ToString();
             for (int i = 0; i < labelek.Count; i++)
             {
@@ -43,145 +68,405 @@ namespace TerFelSzoft
 
         private void makeinputfields()
         {
-            
-            
-            int textboxheight = 20;
-            int textboxwidth = 100;
-            
             switch (alakzat)
             {
                 case "Háromszög":
-                    for (int i = 0; i < 4; i++)
+                    if (true)
                     {
-                        Label newlabeltriangle = new Label();
-                        newlabeltriangle.Location = new Point(combo_alakzatok.Location.X, combo_alakzatok.Location.Y + 180 + i * 30);
-                        newlabeltriangle.Height = textboxheight;
-                        newlabeltriangle.Width = textboxwidth;
-                        newlabeltriangle.Name = "lbl_triangle_" + i;
-                        this.Controls.Add(newlabeltriangle);
-                        labelek.Add(newlabeltriangle);
-                        switch (i)
-                        {
-                            case 0:
-                                newlabeltriangle.Text = "a oldal:";
-                                break;
-                            case 1:
-                                newlabeltriangle.Text = "b oldal:";
-                                break;
-                            case 2:
-                                newlabeltriangle.Text = "c oldal:";
-                                break;
-                            case 3:
-                                newlabeltriangle.Text = "Magasság:";
-                                break;
-                        }
-                        TextBox newtextboxtriangle = new TextBox();
-                        newtextboxtriangle.Location = new Point(newlabeltriangle.Location.X+textboxwidth, newlabeltriangle.Location.Y-3);
-                        newtextboxtriangle.Height = textboxheight;
-                        newtextboxtriangle.Width = textboxwidth;
-                        newtextboxtriangle.Name = "txtbx_triangle_" + i;
-                        newtextboxtriangle.Text = "Írja be az értéket ";
-                        this.Controls.Add(newtextboxtriangle);
-                        textboxok.Add(newtextboxtriangle);
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_mertekegyseg_3.Text = "Cm";
+                        lbl_mertekegyseg_4.Text = "Cm";
+
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_2.Text = "b oldal";
+                        lbl_input_value_3.Text = "c oldal";
+                        lbl_input_value_4.Text = "Magasság";
+
+                        lbl_input_value_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        lbl_input_value_3.Visible = true;
+                        lbl_input_value_4.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        txtbx_input_value_3.Visible = true;
+                        txtbx_input_value_4.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        lbl_mertekegyseg_3.Visible = true;
+                        lbl_mertekegyseg_4.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+                        pctbx_alakzat.Image = Properties.Resources.triangle;
+                        pctbx_alakzat.Width = 400;
+                        pctbx_alakzat.Height = 200;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Háromszög területe: am/2 \n -Háromszög kerülete: a2+b2=c2";
+
+
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
                     }
-                    pctbx_alakzat.Image = Properties.Resources.triangle;
-                    pctbx_alakzat.Width = 400;
-                    pctbx_alakzat.Height = 200;
-                    pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X+380, combo_alakzatok.Location.Y);
-                    pctbx_egyenlet.Visible = true;
-                    pctbx_egyenlet.Image = Properties.Resources.triangle;
-
-
+                    
                     break;
                 case "Négyzet":
                     if (true)
                     {
-                        Label newlabelsquare = new Label();
-                        newlabelsquare.Location = new Point(combo_alakzatok.Location.X, combo_alakzatok.Location.Y + 180 + 30);
-                        newlabelsquare.Height = textboxheight;
-                        newlabelsquare.Width = textboxwidth;
-                        newlabelsquare.Name = "lbl_square";
-                        newlabelsquare.Text = "a oldal:";
-                        this.Controls.Add(newlabelsquare);
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
 
-                        TextBox newtextbox = new TextBox();
-                        newtextbox.Location = new Point(newlabelsquare.Location.X + textboxwidth, newlabelsquare.Location.Y - 3);
-                        newtextbox.Height = textboxheight;
-                        newtextbox.Width = textboxwidth;
-                        newtextbox.Name = "txtbx_square";
-                        newtextbox.Text = "Írja be az értéket ";
-                        this.Controls.Add(newtextbox);
+
 
                         pctbx_alakzat.Image = Properties.Resources.negyzet;
                         pctbx_alakzat.Width = 300;
                         pctbx_alakzat.Height = 300;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
-                        pctbx_egyenlet.Visible = true;
-                        pctbx_egyenlet.Image = Properties.Resources.negyzet;
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Négyzet kerülete: K = 4a \n -Négyzet területe: T = a2 = d2/2";
+                        rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
                     }
-                        
-
-
 
                     break;
                 case "Trapéz":
-
-                    for (int i = 0; i < 5; i++)
+                    if (true)
                     {
-                        Label newlabeltrap = new Label();
-                        newlabeltrap.Location = new Point(combo_alakzatok.Location.X, combo_alakzatok.Location.Y + 180 + i * 30);
-                        newlabeltrap.Height = textboxheight;
-                        newlabeltrap.Width = textboxwidth;
-                        newlabeltrap.Name = "lbl_triangle_" + i;
-                        this.Controls.Add(newlabeltrap);
-                        switch (i)
-                        {
-                            case 0:
-                                newlabeltrap.Text = "a oldal:";
-                                break;
-                            case 1:
-                                newlabeltrap.Text = "b oldal:";
-                                break;
-                            case 2:
-                                newlabeltrap.Text = "c oldal:";
-                                break;
-                            case 3:
-                                newlabeltrap.Text = "d oldal:";
-                                break;
-                            case 4:
-                                newlabeltrap.Text = "Magasság:";
-                                break;
-                        }
-                        TextBox newtextboxtrap = new TextBox();
-                        newtextboxtrap.Location = new Point(newlabeltrap.Location.X + textboxwidth, newlabeltrap.Location.Y - 3);
-                        newtextboxtrap.Height = textboxheight;
-                        newtextboxtrap.Width = textboxwidth;
-                        newtextboxtrap.Name = "txtbx_triangle_" + i;
-                        newtextboxtrap.Text = "Írja be az értéket ";
-                        this.Controls.Add(newtextboxtrap);
+                        lbl_input_value_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        lbl_input_value_3.Visible = true;
+                        lbl_input_value_4.Visible = true;
+                        lbl_input_value_5.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        txtbx_input_value_3.Visible = true;
+                        txtbx_input_value_4.Visible = true;
+                        txtbx_input_value_5.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        lbl_mertekegyseg_3.Visible = true;
+                        lbl_mertekegyseg_4.Visible = true;
+                        lbl_mertekegyseg_5.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_mertekegyseg_3.Text = "Cm";
+                        lbl_mertekegyseg_4.Text = "Cm";
+                        lbl_mertekegyseg_5.Text = "Cm";
+
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_2.Text = "b oldal";
+                        lbl_input_value_3.Text = "c oldal";
+                        lbl_input_value_4.Text = "d oldal";
+                        lbl_input_value_5.Text = "Magasság";
+
+                        pctbx_alakzat.Image = Properties.Resources.trap;
+                        pctbx_alakzat.Width = 400;
+                        pctbx_alakzat.Height = 200;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Trapéz kerülete: K=a+b+c+d \n -Trapéz területe: T=(a+c)/2*m";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
                     }
-                    pctbx_alakzat.Image = Properties.Resources.trap;
-                    pctbx_alakzat.Width = 400;
-                    pctbx_alakzat.Height = 200;
-                    pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
-                    pctbx_egyenlet.Visible = true;
-                    pctbx_egyenlet.Image = Properties.Resources.trap;
+                    
                     break;
                 case "Téglalap":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "b oldal";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.tegla;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Téglalap kerülete: 2a+2b \n -Téglalap területe: a*b";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 case "Paralelogramma":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "b oldal";
+                        lbl_mertekegyseg_3.Text = "Cm";
+                        lbl_input_value_3.Text = "Magasság";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        lbl_input_value_3.Visible = true;
+                        txtbx_input_value_3.Visible = true;
+                        lbl_mertekegyseg_3.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.paralel;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Paralelogramma kerülete: 2 (a+b) \n -Paralelogramma területe: T= am = ab sin α";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 case "Rombusz":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "e átló";
+                        lbl_mertekegyseg_3.Text = "Cm";
+                        lbl_input_value_3.Text = "f átló";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        lbl_input_value_3.Visible = true;
+                        txtbx_input_value_3.Visible = true;
+                        lbl_mertekegyseg_3.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.rombusz;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Rombusz területe: K = 4a \n -Rombusz kerülete: T = ef/2 = a2 sin α";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 case "Deltoid":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "b oldal";
+                        lbl_mertekegyseg_3.Text = "Cm";
+                        lbl_input_value_3.Text = "e átló";
+                        lbl_mertekegyseg_4.Text = "Cm";
+                        lbl_input_value_4.Text = "f átló";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        lbl_input_value_3.Visible = true;
+                        txtbx_input_value_3.Visible = true;
+                        lbl_mertekegyseg_3.Visible = true;
+                        lbl_input_value_4.Visible = true;
+                        txtbx_input_value_4.Visible = true;
+                        lbl_mertekegyseg_4.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.deltoid;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Deltoid területe: T=e*f/2 \n -Deltoid kerülete:K=1(a+b)";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 case "Kör":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "sugár";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "átló";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.kor;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Kör területe: T = √((s−a)(s−b)(s−c)(s−d)) \n -Kör kerülete: K = 2πr = πd";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Terület:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "Kerület:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 case "Henger":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "sugár";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "testmagasság";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.henger;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Henger felszíne: A = 2πr (r + m) \n -Henger térfogata: V = πr2 m";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Térfogat:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "felszín:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+
+
+
+                    }
                     break;
                 case "Gúla":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "a oldal";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "Testmagasság";
+                        lbl_mertekegyseg_3.Text = "Cm";
+                        lbl_input_value_3.Text = "Oldalmagasság";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        lbl_input_value_3.Visible = true;
+                        txtbx_input_value_3.Visible = true;
+                        lbl_mertekegyseg_3.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.gula;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Gúla felszíne: A = T + P \n -Gúla térfogata: V = (T m) /3";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Térfogat:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "felszín:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 case "Gömb":
+                    if (true)
+                    {
+                        lbl_mertekegyseg_1.Text = "Cm";
+                        lbl_input_value_1.Text = "Sugár";
+                        lbl_mertekegyseg_2.Text = "Cm";
+                        lbl_input_value_2.Text = "Átfogó";
+                        lbl_input_value_1.Visible = true;
+                        txtbx_input_value_1.Visible = true;
+                        lbl_mertekegyseg_1.Visible = true;
+                        lbl_input_value_2.Visible = true;
+                        txtbx_input_value_2.Visible = true;
+                        lbl_mertekegyseg_2.Visible = true;
+                        rchtxtbx_egyenlet.Visible = true;
+
+
+                        pctbx_alakzat.Image = Properties.Resources.gomb;
+                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        rchtxtbx_egyenlet.Visible = true;
+                        rchtxtbx_egyenlet.Text = "\n -Gömb felszíne: A = 4πR2 = πd2 \n -Gömb térfogata: V = (4π /3) R3 = (π /6) d3";
+
+                        lbl_result_1.Visible = true;
+                        lbl_result_1.Text = "Térfogat:";
+                        lbl_result_2.Visible = true;
+                        lbl_result_2.Text = "felszín:";
+                        txtbx_result_1.Visible = true;
+                        txtbx_result_2.Visible = true;
+                    }
                     break;
                 
             }

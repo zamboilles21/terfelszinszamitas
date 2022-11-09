@@ -8,3 +8,13 @@ D:\git\IKTprojekt\terfelszinszamitas\TerFelSzoft\TerFelSzoft\TerFelSzoft\obj\Deb
 D:\git\IKTprojekt\terfelszinszamitas\TerFelSzoft\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.csproj.CoreCompileInputs.cache
 D:\git\IKTprojekt\terfelszinszamitas\TerFelSzoft\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.exe
 D:\git\IKTprojekt\terfelszinszamitas\TerFelSzoft\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.pdb
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\bin\Debug\TerFelSzoft.exe.config
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\bin\Debug\TerFelSzoft.exe
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\bin\Debug\TerFelSzoft.pdb
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.csproj.AssemblyReference.cache
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.Form1.resources
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.Properties.Resources.resources
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.csproj.GenerateResource.cache
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.csproj.CoreCompileInputs.cache
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.exe
+D:\git\terfelszin\terfelszinszamitas\Software\TerFelSzoft\TerFelSzoft\obj\Debug\TerFelSzoft.pdb
