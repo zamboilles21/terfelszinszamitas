@@ -33,37 +33,53 @@ a:link {
     text-align: center;
     text-decoration: none;
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    background-color: #666;
-    padding: 11px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-.div1 img{
-    width: 500px;
-    height: 317px;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    align-self: center;
-
-}
-.div2 .profilkep img{
-    width: 20px;
-    height: 40px;
-}
 #profilkep {
-  width: 193px;
-  height: 289px;
+  width: 26%;
+  height: 30%;
+  float: left;
+  padding: auto;
+  margin: auto;
+}
+#profilkep2 {
+  width: 26%;
+  height: 30%;
+  float: right;
+  padding: auto;
+  margin: auto;
+}
+#leiras{
+  width: 100%;
+  height: 50%;
+}
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.FlexContainer div {
+  width: 400px;
+  height: 500px;
+  margin: 5px;
+  background-color: grey;
+  padding: 35px;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.example {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 body{
     background-image: url(../HelperImages/flat-geometric-shapes-background_23-2148380467.webp);
+    background-position: center;
+      background-repeat: repeat;
+      background-size: auto;
 }
