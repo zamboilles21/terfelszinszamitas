@@ -60,6 +60,7 @@ namespace TerFelSzoft
             // 
             this.combo_alakzatok.BackColor = System.Drawing.Color.Silver;
             this.combo_alakzatok.DropDownHeight = 150;
+            this.combo_alakzatok.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_alakzatok.DropDownWidth = 130;
             this.combo_alakzatok.FormattingEnabled = true;
             this.combo_alakzatok.IntegralHeight = false;
@@ -254,6 +255,7 @@ namespace TerFelSzoft
             // 
             // txtbx_result_1
             // 
+            this.txtbx_result_1.Enabled = false;
             this.txtbx_result_1.Location = new System.Drawing.Point(377, 302);
             this.txtbx_result_1.Name = "txtbx_result_1";
             this.txtbx_result_1.Size = new System.Drawing.Size(100, 20);
@@ -273,6 +275,7 @@ namespace TerFelSzoft
             // 
             // txtbx_result_2
             // 
+            this.txtbx_result_2.Enabled = false;
             this.txtbx_result_2.Location = new System.Drawing.Point(377, 343);
             this.txtbx_result_2.Name = "txtbx_result_2";
             this.txtbx_result_2.Size = new System.Drawing.Size(100, 20);
@@ -341,6 +344,8 @@ namespace TerFelSzoft
             this.Controls.Add(this.pctbx_alakzat);
             this.Controls.Add(this.korabbi);
             this.Controls.Add(this.combo_alakzatok);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.Text = "TérFelszín számítóka";
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).EndInit();

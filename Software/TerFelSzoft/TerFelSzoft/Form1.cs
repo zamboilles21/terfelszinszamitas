@@ -22,6 +22,7 @@ namespace TerFelSzoft
             pctbx_alakzat.Image = Properties.Resources.modern_art;
             rchtxtbx_egyenlet.SelectAll();
             rchtxtbx_egyenlet.SelectionAlignment = HorizontalAlignment.Center;
+
         }
 
         private void btn_calc_Click(object sender, EventArgs e)
