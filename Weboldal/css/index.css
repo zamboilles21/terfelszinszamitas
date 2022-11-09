@@ -37,24 +37,32 @@ a:link {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 150px;
-    grid-row-gap: 150px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
     background-color: #666;
+    padding: 11px;
+    margin-left: auto;
+    margin-right: auto;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
     .div2 { grid-area: 1 / 2 / 2 / 3; }
 .div1 img{
-    width: 400px;
+    width: 500px;
     height: 317px;
     align-items: center;
     align-self: center;
     text-align: center;
     align-self: center;
+
 }
-.div2 img{
-    width: 288px;
-    height: 433px;
+.div2 .profilkep img{
+    width: 20px;
+    height: 40px;
+}
+#profilkep {
+  width: 193px;
+  height: 289px;
 }
 body{
     background-image: url(../HelperImages/flat-geometric-shapes-background_23-2148380467.webp);
