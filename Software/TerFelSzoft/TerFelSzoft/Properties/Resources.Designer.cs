@@ -183,6 +183,16 @@ namespace TerFelSzoft.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tegla_water {
+            get {
+                object obj = ResourceManager.GetObject("tegla_water", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap trap {
             get {
                 object obj = ResourceManager.GetObject("trap", resourceCulture);

@@ -136,14 +136,17 @@
   <data name="negyzet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\negyzet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rombusz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\rombusz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gula" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\gula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="modern_art" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modern_art.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="deltoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\deltoid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tukrozott_choose_a_shape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tukrozott_choose_a_shape1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\triangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +154,8 @@
   <data name="tukrozott_choose_a_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tukrozott_choose_a_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rombusz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\rombusz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tukrozott_choose_a_shape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tukrozott_choose_a_shape1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Chooseashape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chooseashape2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +166,7 @@
   <data name="gomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\gomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="modern_art" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\modern_art.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tegla_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tegla_water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

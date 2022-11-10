@@ -209,7 +209,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
 
-                        pctbx_alakzat.Image = Properties.Resources.tegla;
+                        pctbx_alakzat.Image = Properties.Resources.tegla_water;
                         pctbx_alakzat.Width = 300;
                         pctbx_alakzat.Height = 300;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
