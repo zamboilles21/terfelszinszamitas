@@ -29,6 +29,7 @@ namespace TerFelSzoft
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.combo_alakzatok = new System.Windows.Forms.ComboBox();
             this.korabbi = new System.Windows.Forms.ListBox();
             this.btn_calc = new System.Windows.Forms.Button();
@@ -107,7 +108,7 @@ namespace TerFelSzoft
             // 
             this.lbl_input_value_1.AutoSize = true;
             this.lbl_input_value_1.BackColor = System.Drawing.Color.Silver;
-            this.lbl_input_value_1.Location = new System.Drawing.Point(12, 272);
+            this.lbl_input_value_1.Location = new System.Drawing.Point(12, 274);
             this.lbl_input_value_1.Name = "lbl_input_value_1";
             this.lbl_input_value_1.Size = new System.Drawing.Size(35, 13);
             this.lbl_input_value_1.TabIndex = 6;
@@ -118,7 +119,7 @@ namespace TerFelSzoft
             // 
             this.lbl_input_value_2.AutoSize = true;
             this.lbl_input_value_2.BackColor = System.Drawing.Color.Silver;
-            this.lbl_input_value_2.Location = new System.Drawing.Point(12, 299);
+            this.lbl_input_value_2.Location = new System.Drawing.Point(12, 301);
             this.lbl_input_value_2.Name = "lbl_input_value_2";
             this.lbl_input_value_2.Size = new System.Drawing.Size(35, 13);
             this.lbl_input_value_2.TabIndex = 7;
@@ -129,7 +130,7 @@ namespace TerFelSzoft
             // 
             this.lbl_input_value_3.AutoSize = true;
             this.lbl_input_value_3.BackColor = System.Drawing.Color.Silver;
-            this.lbl_input_value_3.Location = new System.Drawing.Point(12, 326);
+            this.lbl_input_value_3.Location = new System.Drawing.Point(12, 328);
             this.lbl_input_value_3.Name = "lbl_input_value_3";
             this.lbl_input_value_3.Size = new System.Drawing.Size(35, 13);
             this.lbl_input_value_3.TabIndex = 8;
@@ -140,7 +141,7 @@ namespace TerFelSzoft
             // 
             this.lbl_input_value_4.AutoSize = true;
             this.lbl_input_value_4.BackColor = System.Drawing.Color.Silver;
-            this.lbl_input_value_4.Location = new System.Drawing.Point(12, 356);
+            this.lbl_input_value_4.Location = new System.Drawing.Point(12, 358);
             this.lbl_input_value_4.Name = "lbl_input_value_4";
             this.lbl_input_value_4.Size = new System.Drawing.Size(35, 13);
             this.lbl_input_value_4.TabIndex = 9;
@@ -151,7 +152,7 @@ namespace TerFelSzoft
             // 
             this.lbl_input_value_5.AutoSize = true;
             this.lbl_input_value_5.BackColor = System.Drawing.Color.Silver;
-            this.lbl_input_value_5.Location = new System.Drawing.Point(12, 382);
+            this.lbl_input_value_5.Location = new System.Drawing.Point(12, 384);
             this.lbl_input_value_5.Name = "lbl_input_value_5";
             this.lbl_input_value_5.Size = new System.Drawing.Size(35, 13);
             this.lbl_input_value_5.TabIndex = 10;
@@ -266,7 +267,7 @@ namespace TerFelSzoft
             // 
             this.lbl_result_1.AutoSize = true;
             this.lbl_result_1.BackColor = System.Drawing.Color.Silver;
-            this.lbl_result_1.Location = new System.Drawing.Point(269, 272);
+            this.lbl_result_1.Location = new System.Drawing.Point(269, 275);
             this.lbl_result_1.Name = "lbl_result_1";
             this.lbl_result_1.Size = new System.Drawing.Size(35, 13);
             this.lbl_result_1.TabIndex = 21;
@@ -286,7 +287,7 @@ namespace TerFelSzoft
             // 
             this.lbl_result_2.AutoSize = true;
             this.lbl_result_2.BackColor = System.Drawing.Color.Silver;
-            this.lbl_result_2.Location = new System.Drawing.Point(269, 302);
+            this.lbl_result_2.Location = new System.Drawing.Point(269, 305);
             this.lbl_result_2.Name = "lbl_result_2";
             this.lbl_result_2.Size = new System.Drawing.Size(35, 13);
             this.lbl_result_2.TabIndex = 23;
@@ -344,6 +345,7 @@ namespace TerFelSzoft
             this.Controls.Add(this.pctbx_alakzat);
             this.Controls.Add(this.korabbi);
             this.Controls.Add(this.combo_alakzatok);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
