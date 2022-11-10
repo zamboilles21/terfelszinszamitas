@@ -32,7 +32,11 @@ namespace TerFelSzoft
 
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            for (int i = 0; i < 10; i++)
+            {
+                pctbx_alakzat.SendToBack();
+            }
+            
             lbl_input_value_1.Visible = false;
             lbl_input_value_2.Visible = false;
             lbl_input_value_3.Visible = false;
@@ -101,7 +105,7 @@ namespace TerFelSzoft
                         pctbx_alakzat.Image = Properties.Resources.triangle;
                         pctbx_alakzat.Width = 400;
                         pctbx_alakzat.Height = 200;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y+20);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Háromszög területe: am/2 \n -Háromszög kerülete: a2+b2=c2";
 
@@ -128,9 +132,9 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.negyzet;
-                        pctbx_alakzat.Width = 300;
-                        pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Width = 320;
+                        pctbx_alakzat.Height = 320;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 470, combo_alakzatok.Location.Y);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Négyzet kerülete: K = 4a \n -Négyzet területe: T = a2 = d2/2";
                         rchtxtbx_egyenlet.Visible = true;
@@ -180,7 +184,7 @@ namespace TerFelSzoft
                         pctbx_alakzat.Image = Properties.Resources.trap;
                         pctbx_alakzat.Width = 400;
                         pctbx_alakzat.Height = 200;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y+20);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Trapéz kerülete: K=a+b+c+d \n -Trapéz területe: T=(a+c)/2*m";
 
@@ -212,7 +216,7 @@ namespace TerFelSzoft
                         pctbx_alakzat.Image = Properties.Resources.tegla_water;
                         pctbx_alakzat.Width = 300;
                         pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 450, combo_alakzatok.Location.Y-10);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Téglalap kerülete: 2a+2b \n -Téglalap területe: a*b";
 
@@ -246,9 +250,9 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.paralel;
-                        pctbx_alakzat.Width = 300;
-                        pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Width = 400;
+                        pctbx_alakzat.Height = 280;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y-10);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Paralelogramma kerülete: 2 (a+b) \n -Paralelogramma területe: T= am = ab sin α";
 
@@ -282,9 +286,9 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.rombusz;
-                        pctbx_alakzat.Width = 300;
-                        pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Width = 400;
+                        pctbx_alakzat.Height = 280;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y-10);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Rombusz területe: K = 4a \n -Rombusz kerülete: T = ef/2 = a2 sin α";
 
@@ -323,7 +327,7 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.deltoid;
-                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Width = 400;
                         pctbx_alakzat.Height = 300;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
                         rchtxtbx_egyenlet.Visible = true;
@@ -354,9 +358,9 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.kor;
-                        pctbx_alakzat.Width = 300;
-                        pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Width = 400;
+                        pctbx_alakzat.Height = 350;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 420, combo_alakzatok.Location.Y+20);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Kör területe: T = √((s−a)(s−b)(s−c)(s−d)) \n -Kör kerülete: K = 2πr = πd";
 
@@ -385,9 +389,9 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.henger;
-                        pctbx_alakzat.Width = 300;
+                        pctbx_alakzat.Width = 200;
                         pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 510, combo_alakzatok.Location.Y);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Henger felszíne: A = 2πr (r + m) \n -Henger térfogata: V = πr2 m";
 
@@ -426,7 +430,7 @@ namespace TerFelSzoft
                         pctbx_alakzat.Image = Properties.Resources.gula;
                         pctbx_alakzat.Width = 300;
                         pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 470, combo_alakzatok.Location.Y);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Gúla felszíne: A = T + P \n -Gúla térfogata: V = (T m) /3";
 
@@ -455,9 +459,9 @@ namespace TerFelSzoft
 
 
                         pctbx_alakzat.Image = Properties.Resources.gomb;
-                        pctbx_alakzat.Width = 300;
-                        pctbx_alakzat.Height = 300;
-                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y);
+                        pctbx_alakzat.Width = 280;
+                        pctbx_alakzat.Height = 280;
+                        pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 450, combo_alakzatok.Location.Y);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Gömb felszíne: A = 4πR2 = πd2 \n -Gömb térfogata: V = (4π /3) R3 = (π /6) d3";
 

@@ -256,7 +256,7 @@ namespace TerFelSzoft
             // txtbx_result_1
             // 
             this.txtbx_result_1.Enabled = false;
-            this.txtbx_result_1.Location = new System.Drawing.Point(377, 302);
+            this.txtbx_result_1.Location = new System.Drawing.Point(362, 272);
             this.txtbx_result_1.Name = "txtbx_result_1";
             this.txtbx_result_1.Size = new System.Drawing.Size(100, 20);
             this.txtbx_result_1.TabIndex = 22;
@@ -266,7 +266,7 @@ namespace TerFelSzoft
             // 
             this.lbl_result_1.AutoSize = true;
             this.lbl_result_1.BackColor = System.Drawing.Color.Silver;
-            this.lbl_result_1.Location = new System.Drawing.Point(284, 302);
+            this.lbl_result_1.Location = new System.Drawing.Point(269, 272);
             this.lbl_result_1.Name = "lbl_result_1";
             this.lbl_result_1.Size = new System.Drawing.Size(35, 13);
             this.lbl_result_1.TabIndex = 21;
@@ -276,7 +276,7 @@ namespace TerFelSzoft
             // txtbx_result_2
             // 
             this.txtbx_result_2.Enabled = false;
-            this.txtbx_result_2.Location = new System.Drawing.Point(377, 343);
+            this.txtbx_result_2.Location = new System.Drawing.Point(362, 302);
             this.txtbx_result_2.Name = "txtbx_result_2";
             this.txtbx_result_2.Size = new System.Drawing.Size(100, 20);
             this.txtbx_result_2.TabIndex = 24;
@@ -286,7 +286,7 @@ namespace TerFelSzoft
             // 
             this.lbl_result_2.AutoSize = true;
             this.lbl_result_2.BackColor = System.Drawing.Color.Silver;
-            this.lbl_result_2.Location = new System.Drawing.Point(284, 343);
+            this.lbl_result_2.Location = new System.Drawing.Point(269, 302);
             this.lbl_result_2.Name = "lbl_result_2";
             this.lbl_result_2.Size = new System.Drawing.Size(35, 13);
             this.lbl_result_2.TabIndex = 23;
