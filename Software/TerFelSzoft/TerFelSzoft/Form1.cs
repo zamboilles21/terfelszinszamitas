@@ -32,6 +32,7 @@ namespace TerFelSzoft
 
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             for (int i = 0; i < 10; i++)
             {
                 pctbx_alakzat.SendToBack();
@@ -51,11 +52,13 @@ namespace TerFelSzoft
             lbl_mertekegyseg_2.Visible = false;
             lbl_mertekegyseg_3.Visible = false;
             lbl_mertekegyseg_4.Visible = false;
-            lbl_mertekegyseg_5.Visible = false;
+            lbl_mertekegyseg_5.Visible = false; 
             lbl_result_1.Visible = false;
             lbl_result_2.Visible = false;
             txtbx_result_1.Visible = false;
             txtbx_result_2.Visible = false;
+            lbl_output_measure_1.Visible = false;
+            lbl_output_measure_2.Visible = false;
 
             alakzat = combo_alakzatok.SelectedItem.ToString();
             for (int i = 0; i < labelek.Count; i++)
@@ -82,11 +85,12 @@ namespace TerFelSzoft
                         lbl_mertekegyseg_2.Text = "Cm";
                         lbl_mertekegyseg_3.Text = "Cm";
                         lbl_mertekegyseg_4.Text = "Cm";
+                        
 
-                        lbl_input_value_1.Text = "a oldal";
-                        lbl_input_value_2.Text = "b oldal";
-                        lbl_input_value_3.Text = "c oldal";
-                        lbl_input_value_4.Text = "Magasság";
+                        lbl_input_value_1.Text = "a oldal:";
+                        lbl_input_value_2.Text = "b oldal:";
+                        lbl_input_value_3.Text = "c oldal:";
+                        lbl_input_value_4.Text = "Magasság:";
 
                         lbl_input_value_1.Visible = true;
                         lbl_input_value_2.Visible = true;
@@ -101,6 +105,11 @@ namespace TerFelSzoft
                         lbl_mertekegyseg_3.Visible = true;
                         lbl_mertekegyseg_4.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
                         pctbx_alakzat.Image = Properties.Resources.triangle;
                         pctbx_alakzat.Width = 400;
@@ -124,7 +133,7 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Text = "a oldal:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -145,6 +154,11 @@ namespace TerFelSzoft
                         lbl_result_2.Text = "Kerület:";
                         txtbx_result_1.Visible = true;
                         txtbx_result_2.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
                     }
 
                     break;
@@ -168,6 +182,11 @@ namespace TerFelSzoft
                         lbl_mertekegyseg_5.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
 
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
+
 
                         lbl_mertekegyseg_1.Text = "Cm";
                         lbl_mertekegyseg_2.Text = "Cm";
@@ -175,11 +194,11 @@ namespace TerFelSzoft
                         lbl_mertekegyseg_4.Text = "Cm";
                         lbl_mertekegyseg_5.Text = "Cm";
 
-                        lbl_input_value_1.Text = "a oldal";
-                        lbl_input_value_2.Text = "b oldal";
-                        lbl_input_value_3.Text = "c oldal";
-                        lbl_input_value_4.Text = "d oldal";
-                        lbl_input_value_5.Text = "Magasság";
+                        lbl_input_value_1.Text = "a oldal:";
+                        lbl_input_value_2.Text = "b oldal:";
+                        lbl_input_value_3.Text = "c oldal:";
+                        lbl_input_value_4.Text = "d oldal:";
+                        lbl_input_value_5.Text = "Magasság:";
 
                         pctbx_alakzat.Image = Properties.Resources.trap;
                         pctbx_alakzat.Width = 400;
@@ -201,9 +220,9 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Text = "a oldal:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "b oldal";
+                        lbl_input_value_2.Text = "b oldal:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -211,6 +230,11 @@ namespace TerFelSzoft
                         txtbx_input_value_2.Visible = true;
                         lbl_mertekegyseg_2.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.tegla_water;
@@ -232,11 +256,11 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Text = "a oldal:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "b oldal";
+                        lbl_input_value_2.Text = "b oldal:";
                         lbl_mertekegyseg_3.Text = "Cm";
-                        lbl_input_value_3.Text = "Magasság";
+                        lbl_input_value_3.Text = "Magasság:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -247,6 +271,11 @@ namespace TerFelSzoft
                         txtbx_input_value_3.Visible = true;
                         lbl_mertekegyseg_3.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.paralel;
@@ -268,11 +297,11 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Text = "a oldal:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "e átló";
+                        lbl_input_value_2.Text = "e átló:";
                         lbl_mertekegyseg_3.Text = "Cm";
-                        lbl_input_value_3.Text = "f átló";
+                        lbl_input_value_3.Text = "f átló:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -283,6 +312,11 @@ namespace TerFelSzoft
                         txtbx_input_value_3.Visible = true;
                         lbl_mertekegyseg_3.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.rombusz;
@@ -304,13 +338,13 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Text = "a oldal:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "b oldal";
+                        lbl_input_value_2.Text = "b oldal:";
                         lbl_mertekegyseg_3.Text = "Cm";
-                        lbl_input_value_3.Text = "e átló";
+                        lbl_input_value_3.Text = "e átló:";
                         lbl_mertekegyseg_4.Text = "Cm";
-                        lbl_input_value_4.Text = "f átló";
+                        lbl_input_value_4.Text = "f átló:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -324,6 +358,11 @@ namespace TerFelSzoft
                         txtbx_input_value_4.Visible = true;
                         lbl_mertekegyseg_4.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.deltoid;
@@ -345,9 +384,9 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "sugár";
+                        lbl_input_value_1.Text = "sugár:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "átló";
+                        lbl_input_value_2.Text = "Átló:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -355,6 +394,11 @@ namespace TerFelSzoft
                         txtbx_input_value_2.Visible = true;
                         lbl_mertekegyseg_2.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.kor;
@@ -376,9 +420,9 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "sugár";
+                        lbl_input_value_1.Text = "sugár:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "testmagasság";
+                        lbl_input_value_2.Text = "Testmagasság:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -386,6 +430,11 @@ namespace TerFelSzoft
                         txtbx_input_value_2.Visible = true;
                         lbl_mertekegyseg_2.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB3";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.henger;
@@ -398,7 +447,7 @@ namespace TerFelSzoft
                         lbl_result_1.Visible = true;
                         lbl_result_1.Text = "Térfogat:";
                         lbl_result_2.Visible = true;
-                        lbl_result_2.Text = "felszín:";
+                        lbl_result_2.Text = "Felszín:";
                         txtbx_result_1.Visible = true;
                         txtbx_result_2.Visible = true;
 
@@ -410,11 +459,11 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "a oldal";
+                        lbl_input_value_1.Text = "a oldal:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "Testmagasság";
+                        lbl_input_value_2.Text = "Testmagasság:";
                         lbl_mertekegyseg_3.Text = "Cm";
-                        lbl_input_value_3.Text = "Oldalmagasság";
+                        lbl_input_value_3.Text = "Oldalmagasság:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -426,10 +475,15 @@ namespace TerFelSzoft
                         lbl_mertekegyseg_3.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
 
+                        lbl_output_measure_1.Text = "Cm\xB3";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
+
 
                         pctbx_alakzat.Image = Properties.Resources.gula;
-                        pctbx_alakzat.Width = 300;
-                        pctbx_alakzat.Height = 300;
+                        pctbx_alakzat.Width = 280;
+                        pctbx_alakzat.Height = 280;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 470, combo_alakzatok.Location.Y);
                         rchtxtbx_egyenlet.Visible = true;
                         rchtxtbx_egyenlet.Text = "\n -Gúla felszíne: A = T + P \n -Gúla térfogata: V = (T m) /3";
@@ -437,7 +491,7 @@ namespace TerFelSzoft
                         lbl_result_1.Visible = true;
                         lbl_result_1.Text = "Térfogat:";
                         lbl_result_2.Visible = true;
-                        lbl_result_2.Text = "felszín:";
+                        lbl_result_2.Text = "Felszín:";
                         txtbx_result_1.Visible = true;
                         txtbx_result_2.Visible = true;
                     }
@@ -446,9 +500,9 @@ namespace TerFelSzoft
                     if (true)
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
-                        lbl_input_value_1.Text = "Sugár";
+                        lbl_input_value_1.Text = "sugár:";
                         lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "Átfogó";
+                        lbl_input_value_2.Text = "Átfogó:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
@@ -456,6 +510,11 @@ namespace TerFelSzoft
                         txtbx_input_value_2.Visible = true;
                         lbl_mertekegyseg_2.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
+
+                        lbl_output_measure_1.Text = "Cm\xB3";
+                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_1.Visible = true;
+                        lbl_output_measure_2.Visible = true;
 
 
                         pctbx_alakzat.Image = Properties.Resources.gomb;
@@ -468,7 +527,7 @@ namespace TerFelSzoft
                         lbl_result_1.Visible = true;
                         lbl_result_1.Text = "Térfogat:";
                         lbl_result_2.Visible = true;
-                        lbl_result_2.Text = "felszín:";
+                        lbl_result_2.Text = "Felszín:";
                         txtbx_result_1.Visible = true;
                         txtbx_result_2.Visible = true;
                     }

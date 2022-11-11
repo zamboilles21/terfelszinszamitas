@@ -54,6 +54,8 @@ namespace TerFelSzoft
             this.lbl_result_2 = new System.Windows.Forms.Label();
             this.rchtxtbx_egyenlet = new System.Windows.Forms.RichTextBox();
             this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
+            this.lbl_output_measure_2 = new System.Windows.Forms.Label();
+            this.lbl_output_measure_1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).BeginInit();
             this.SuspendLayout();
             // 
@@ -315,12 +317,36 @@ namespace TerFelSzoft
             this.pctbx_alakzat.TabIndex = 2;
             this.pctbx_alakzat.TabStop = false;
             // 
+            // lbl_output_measure_2
+            // 
+            this.lbl_output_measure_2.AutoSize = true;
+            this.lbl_output_measure_2.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_output_measure_2.Location = new System.Drawing.Point(468, 306);
+            this.lbl_output_measure_2.Name = "lbl_output_measure_2";
+            this.lbl_output_measure_2.Size = new System.Drawing.Size(35, 13);
+            this.lbl_output_measure_2.TabIndex = 27;
+            this.lbl_output_measure_2.Text = "label2";
+            this.lbl_output_measure_2.Visible = false;
+            // 
+            // lbl_output_measure_1
+            // 
+            this.lbl_output_measure_1.AutoSize = true;
+            this.lbl_output_measure_1.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbl_output_measure_1.Location = new System.Drawing.Point(468, 279);
+            this.lbl_output_measure_1.Name = "lbl_output_measure_1";
+            this.lbl_output_measure_1.Size = new System.Drawing.Size(35, 13);
+            this.lbl_output_measure_1.TabIndex = 26;
+            this.lbl_output_measure_1.Text = "label1";
+            this.lbl_output_measure_1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_output_measure_2);
+            this.Controls.Add(this.lbl_output_measure_1);
             this.Controls.Add(this.rchtxtbx_egyenlet);
             this.Controls.Add(this.txtbx_result_2);
             this.Controls.Add(this.lbl_result_2);
@@ -382,6 +408,8 @@ namespace TerFelSzoft
         private System.Windows.Forms.TextBox txtbx_result_2;
         private System.Windows.Forms.Label lbl_result_2;
         private System.Windows.Forms.RichTextBox rchtxtbx_egyenlet;
+        private System.Windows.Forms.Label lbl_output_measure_2;
+        private System.Windows.Forms.Label lbl_output_measure_1;
     }
 }
 
