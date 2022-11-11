@@ -90,6 +90,7 @@ namespace TerFelSzoft
             // korabbi
             // 
             this.korabbi.BackColor = System.Drawing.Color.DarkSalmon;
+            this.korabbi.Enabled = false;
             this.korabbi.FormattingEnabled = true;
             this.korabbi.Location = new System.Drawing.Point(668, 343);
             this.korabbi.Name = "korabbi";
@@ -258,9 +259,9 @@ namespace TerFelSzoft
             // 
             // txtbx_result_1
             // 
-            this.txtbx_result_1.Enabled = false;
             this.txtbx_result_1.Location = new System.Drawing.Point(362, 272);
             this.txtbx_result_1.Name = "txtbx_result_1";
+            this.txtbx_result_1.ReadOnly = true;
             this.txtbx_result_1.Size = new System.Drawing.Size(100, 20);
             this.txtbx_result_1.TabIndex = 22;
             this.txtbx_result_1.Visible = false;
@@ -278,9 +279,9 @@ namespace TerFelSzoft
             // 
             // txtbx_result_2
             // 
-            this.txtbx_result_2.Enabled = false;
             this.txtbx_result_2.Location = new System.Drawing.Point(362, 302);
             this.txtbx_result_2.Name = "txtbx_result_2";
+            this.txtbx_result_2.ReadOnly = true;
             this.txtbx_result_2.Size = new System.Drawing.Size(100, 20);
             this.txtbx_result_2.TabIndex = 24;
             this.txtbx_result_2.Visible = false;
@@ -301,6 +302,7 @@ namespace TerFelSzoft
             this.rchtxtbx_egyenlet.BackColor = System.Drawing.Color.DarkSalmon;
             this.rchtxtbx_egyenlet.Location = new System.Drawing.Point(148, 12);
             this.rchtxtbx_egyenlet.Name = "rchtxtbx_egyenlet";
+            this.rchtxtbx_egyenlet.ReadOnly = true;
             this.rchtxtbx_egyenlet.Size = new System.Drawing.Size(238, 60);
             this.rchtxtbx_egyenlet.TabIndex = 25;
             this.rchtxtbx_egyenlet.Text = "";
