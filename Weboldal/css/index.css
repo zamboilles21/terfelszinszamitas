@@ -27,11 +27,12 @@ a:link {
   nav{
     background-color: orange;
     
-    height: 75px;
+    height: 70px;
     align-content: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
+    padding: 10px;
 }
 #profilkep {
   width: 36%;
@@ -46,16 +47,25 @@ a:link {
   float: right;
   padding-right: 20px;
   margin: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 #leiras{
   width: 100%;
   height: 50%;
+  border: 2px solid black;
+}
+#letolt{
+  width: 100%;
+  height: 55%;
+  
 }
 .tartalom{
   padding-left: 30px;
   padding-right: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  
   
 }
 
@@ -69,14 +79,17 @@ a:link {
   height: 80vh;
   overflow: hidden;
   flex-direction: row;
+
 }
 
 .FlexContainer div {
-  width: 450px;
-  height: 600px;
+  width: 45%;
+  height: 100%;
   margin: 5px;
   background-color: grey;
   padding: 35px;
+  border: 5px solid black;
+  border-radius: 15px;
 }
 .example::-webkit-scrollbar {
   display: none;

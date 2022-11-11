@@ -27,11 +27,12 @@ a:link {
   nav{
     background-color: orange;
     
-    height: 75px;
+    height: 70px;
     align-content: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
+    padding: 10px;
 }
 .FlexContainer {
     display: flex;
