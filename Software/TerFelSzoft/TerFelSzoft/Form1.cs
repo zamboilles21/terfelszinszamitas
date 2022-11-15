@@ -124,7 +124,15 @@ namespace TerFelSzoft
 
                     break;
                 case "Trapéz":
-                    
+                    int aoldal_trap = input_value_1;
+                    int boldal_trap = input_value_2;
+                    int coldal_trap = input_value_3;
+                    int doldal_trap = input_value_4;
+                    int magassag_trap = input_value_4;
+
+                    txtbx_result_2.Text = (aoldal_trap + boldal_trap + coldal_trap + doldal_trap).ToString();
+                    txtbx_result_1.Text = ((aoldal_trap + coldal_trap) / 2 * magassag_trap).ToString();
+
                     break;
                 case "Gúla":
 
