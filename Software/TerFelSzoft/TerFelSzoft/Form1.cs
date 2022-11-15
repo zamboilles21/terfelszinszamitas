@@ -12,8 +12,7 @@ namespace TerFelSzoft
 {
     public partial class Form1 : Form
     {
-        static List<Label> labelek = new List<Label>();
-        static List<TextBox> textboxok = new List<TextBox>();
+        
         static string alakzat = "";
         public Form1()
         {
@@ -27,11 +26,122 @@ namespace TerFelSzoft
 
         private void btn_calc_Click(object sender, EventArgs e)
         {
+            /*
+            int test=Convert.ToInt32( txtbx_input_value_1.Text);
+            txtbx_result_1.Text =(test*test).ToString();
+            */
+            int input_value_1=0;
+            int input_value_2 = 0;
+            int input_value_3 = 0;
+            int input_value_4 = 0;
+            int input_value_5 = 0;
+
+
+            if (txtbx_input_value_1.Text!="")
+            {
+                input_value_1 = Convert.ToInt32(txtbx_input_value_1.Text);
+            }
+            if (txtbx_input_value_2.Text != "")
+            {
+                input_value_2 = Convert.ToInt32(txtbx_input_value_2.Text);
+            }
+            if (txtbx_input_value_3.Text != "")
+            {
+                input_value_3 = Convert.ToInt32(txtbx_input_value_3.Text);
+            }
+            if (txtbx_input_value_4.Text != "")
+            {
+                input_value_4 = Convert.ToInt32(txtbx_input_value_4.Text);
+            }
+            if (txtbx_input_value_5.Text != "")
+            {
+                input_value_5 = Convert.ToInt32(txtbx_input_value_5.Text);
+            }
+
+
+
+
+            switch (alakzat)
+            {
+                case "Háromszög":
+
+                    int aoldal_tri = input_value_1;
+                    int boldal_tri = input_value_2;
+                    int coldal_tri = input_value_3;
+                    int magassag_tri = input_value_4;
+                    txtbx_result_1.Text = ((aoldal_tri * magassag_tri) / 2).ToString();
+                    txtbx_result_2.Text = (aoldal_tri + boldal_tri + coldal_tri).ToString();
+
+                    break;
+                case "Négyzet":
+                    int aoldal_square= input_value_1;
+                    txtbx_result_2.Text = (4 * aoldal_square).ToString();
+                    txtbx_result_1.Text = (aoldal_square * aoldal_square).ToString();
+
+
+                    break;
+                case "Téglalap":
+                    int aoldal_brick = input_value_1;
+                    int boldal_brick = input_value_2;
+
+                    txtbx_result_2.Text = ((2 * aoldal_brick) + (2 * boldal_brick)).ToString();
+                    txtbx_result_1.Text = (aoldal_brick*boldal_brick).ToString();
+
+                    break;
+                case "Kör":
+
+                    
+
+
+                    break;
+                case "Rombusz":
+                    int aoldal_rom = input_value_1;
+                    int eatlo_rom = input_value_2;
+                    int fatlo_rom = input_value_3;
+
+                    txtbx_result_2.Text =  (4 * aoldal_rom).ToString();
+                    txtbx_result_1.Text = ((eatlo_rom * fatlo_rom) / 2).ToString();
+                    break;
+                case "Deltoid":
+                    int aoldal_del = input_value_1;
+                    int boldal_del = input_value_2;
+                    int eatlo_del = input_value_3;
+                    int fatlo_del = input_value_4;
+
+                    txtbx_result_2.Text = ((aoldal_del+boldal_del) * 2).ToString();
+                    txtbx_result_1.Text = ((eatlo_del * fatlo_del) / 2).ToString();
+
+
+                    break;
+                case "Paralelogramma":
+                    int aoldal_par = input_value_1;
+                    int boldal_par = input_value_2;
+                    int magassag_par = input_value_3;
+
+                    txtbx_result_2.Text = ((aoldal_par + boldal_par) * 2).ToString();
+                    txtbx_result_1.Text = (aoldal_par*magassag_par).ToString();
+
+
+                    break;
+                case "Trapéz":
+                    
+                    break;
+                case "Gúla":
+
+                    break;
+                case "Gömb":
+
+                    break;
+                case "Henger":
+
+                    break;
+            }
             
         }
 
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             
             for (int i = 0; i < 10; i++)
             {
@@ -61,16 +171,7 @@ namespace TerFelSzoft
             lbl_output_measure_2.Visible = false;
 
             alakzat = combo_alakzatok.SelectedItem.ToString();
-            for (int i = 0; i < labelek.Count; i++)
-            {
-                this.Controls.Remove(labelek[i]);
-                labelek.RemoveAt(i);
-            }
-            for (int i = 0; i < textboxok.Count; i++)
-            {
-                this.Controls.Remove(textboxok[i]);
-                textboxok.RemoveAt(i);
-            }
+            
             makeinputfields();
         }
 
@@ -107,7 +208,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
@@ -116,7 +217,7 @@ namespace TerFelSzoft
                         pctbx_alakzat.Height = 200;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y+20);
                         rchtxtbx_egyenlet.Visible = true;
-                        rchtxtbx_egyenlet.Text = "\n -Háromszög területe: am/2 \n -Háromszög kerülete: a2+b2=c2";
+                        rchtxtbx_egyenlet.Text = "\n -Háromszög területe: am/2 \n -Háromszög kerülete: a+b+c";
 
 
 
@@ -156,7 +257,7 @@ namespace TerFelSzoft
                         txtbx_result_2.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
                     }
@@ -183,7 +284,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
@@ -232,7 +333,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
@@ -273,7 +374,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
@@ -314,7 +415,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
@@ -360,7 +461,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
@@ -396,7 +497,7 @@ namespace TerFelSzoft
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
-                        lbl_output_measure_2.Text = "Cm\xB2";
+                        lbl_output_measure_2.Text = "Cm";
                         lbl_output_measure_1.Visible = true;
                         lbl_output_measure_2.Visible = true;
 
