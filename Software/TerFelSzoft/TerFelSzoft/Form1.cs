@@ -26,143 +26,153 @@ namespace TerFelSzoft
 
         private void btn_calc_Click(object sender, EventArgs e)
         {
-            /*
-            int test=Convert.ToInt32( txtbx_input_value_1.Text);
-            txtbx_result_1.Text =(test*test).ToString();
-            */
-            int input_value_1=0;
-            int input_value_2 = 0;
-            int input_value_3 = 0;
-            int input_value_4 = 0;
-            int input_value_5 = 0;
+            bool notint_input_1 = txtbx_input_value_1.Text.All(Char.IsDigit);
+            bool notint_input_2 = txtbx_input_value_2.Text.All(Char.IsDigit);
+            bool notint_input_3 = txtbx_input_value_3.Text.All(Char.IsDigit);
+            bool notint_input_4 = txtbx_input_value_4.Text.All(Char.IsDigit);
+            bool notint_input_5 = txtbx_input_value_5.Text.All(Char.IsDigit);
 
-
-            if (txtbx_input_value_1.Text!="")
+            if (!notint_input_1||!notint_input_2||!notint_input_3||!notint_input_4||!notint_input_5)
             {
-                input_value_1 = Convert.ToInt32(txtbx_input_value_1.Text);
+                MessageBox.Show("Nem számot adott meg!");
             }
-            if (txtbx_input_value_2.Text != "")
+            else
             {
-                input_value_2 = Convert.ToInt32(txtbx_input_value_2.Text);
+                int input_value_1 = 0;
+                int input_value_2 = 0;
+                int input_value_3 = 0;
+                int input_value_4 = 0;
+                int input_value_5 = 0;
+
+
+                if (txtbx_input_value_1.Text != "")
+                {
+                    input_value_1 = Convert.ToInt32(txtbx_input_value_1.Text);
+                }
+                if (txtbx_input_value_2.Text != "")
+                {
+                    input_value_2 = Convert.ToInt32(txtbx_input_value_2.Text);
+                }
+                if (txtbx_input_value_3.Text != "")
+                {
+                    input_value_3 = Convert.ToInt32(txtbx_input_value_3.Text);
+                }
+                if (txtbx_input_value_4.Text != "")
+                {
+                    input_value_4 = Convert.ToInt32(txtbx_input_value_4.Text);
+                }
+                if (txtbx_input_value_5.Text != "")
+                {
+                    input_value_5 = Convert.ToInt32(txtbx_input_value_5.Text);
+                }
+
+
+
+
+                switch (alakzat)
+                {
+                    case "Háromszög":
+
+                        int aoldal_tri = input_value_1;
+                        int boldal_tri = input_value_2;
+                        int coldal_tri = input_value_3;
+                        int magassag_tri = input_value_4;
+                        txtbx_result_1.Text = ((aoldal_tri * magassag_tri) / 2).ToString();
+                        txtbx_result_2.Text = (aoldal_tri + boldal_tri + coldal_tri).ToString();
+
+                        break;
+                    case "Négyzet":
+                        int aoldal_square = input_value_1;
+                        txtbx_result_2.Text = (4 * aoldal_square).ToString();
+                        txtbx_result_1.Text = (aoldal_square * aoldal_square).ToString();
+
+
+                        break;
+                    case "Téglalap":
+                        int aoldal_brick = input_value_1;
+                        int boldal_brick = input_value_2;
+
+                        txtbx_result_2.Text = ((2 * aoldal_brick) + (2 * boldal_brick)).ToString();
+                        txtbx_result_1.Text = (aoldal_brick * boldal_brick).ToString();
+
+                        break;
+                    case "Kör":
+                        int kor_sugar = input_value_1;
+
+                        txtbx_result_2.Text = (2 * Math.PI * kor_sugar).ToString();
+                        txtbx_result_1.Text = ((kor_sugar * kor_sugar) * Math.PI).ToString();
+
+
+                        break;
+                    case "Rombusz":
+                        int aoldal_rom = input_value_1;
+                        int eatlo_rom = input_value_2;
+                        int fatlo_rom = input_value_3;
+
+                        txtbx_result_2.Text = (4 * aoldal_rom).ToString();
+                        txtbx_result_1.Text = ((eatlo_rom * fatlo_rom) / 2).ToString();
+                        break;
+                    case "Deltoid":
+                        int aoldal_del = input_value_1;
+                        int boldal_del = input_value_2;
+                        int eatlo_del = input_value_3;
+                        int fatlo_del = input_value_4;
+
+                        txtbx_result_2.Text = ((aoldal_del + boldal_del) * 2).ToString();
+                        txtbx_result_1.Text = ((eatlo_del * fatlo_del) / 2).ToString();
+
+
+                        break;
+                    case "Paralelogramma":
+                        int aoldal_par = input_value_1;
+                        int boldal_par = input_value_2;
+                        int magassag_par = input_value_3;
+
+                        txtbx_result_2.Text = ((aoldal_par + boldal_par) * 2).ToString();
+                        txtbx_result_1.Text = (aoldal_par * magassag_par).ToString();
+
+
+                        break;
+                    case "Trapéz":
+                        int aoldal_trap = input_value_1;
+                        int boldal_trap = input_value_2;
+                        int coldal_trap = input_value_3;
+                        int doldal_trap = input_value_4;
+                        int magassag_trap = input_value_5;
+
+                        txtbx_result_2.Text = (aoldal_trap + boldal_trap + coldal_trap + doldal_trap).ToString();
+                        txtbx_result_1.Text = ((aoldal_trap + coldal_trap) / 2 * magassag_trap).ToString();
+
+                        break;
+                    case "Gúla":
+                        int gula_aoldal = input_value_1;
+                        int gula_testmagassag = input_value_2;
+                        int gula_oldalmagassag = input_value_3;
+
+                        txtbx_result_2.Text = ((gula_testmagassag * Math.Pow(gula_aoldal, 2)) / 3).ToString();
+                        txtbx_result_1.Text = (Math.Pow(gula_aoldal, 2) + ((gula_aoldal * gula_oldalmagassag) / 2)).ToString();
+
+                        break;
+                    case "Gömb":
+                        int gomb_sugar = input_value_1;
+
+
+                        txtbx_result_2.Text =  (Math.PI * (Math.Pow(gomb_sugar * 2, 2))).ToString();
+                        txtbx_result_1.Text = ((Math.PI / 6) * Math.Pow(gomb_sugar, 3)).ToString();
+
+                        break;
+                    case "Henger":
+                        int henger_sugar = input_value_1;
+                        int henger_magassag = input_value_2;
+
+                        txtbx_result_2.Text = (((Math.PI * (henger_sugar * henger_sugar))) * henger_magassag).ToString();
+                        txtbx_result_1.Text = (((Math.PI * 2) * henger_sugar) * (henger_sugar + henger_magassag)).ToString();
+                        break;
+                }
             }
-            if (txtbx_input_value_3.Text != "")
-            {
-                input_value_3 = Convert.ToInt32(txtbx_input_value_3.Text);
-            }
-            if (txtbx_input_value_4.Text != "")
-            {
-                input_value_4 = Convert.ToInt32(txtbx_input_value_4.Text);
-            }
-            if (txtbx_input_value_5.Text != "")
-            {
-                input_value_5 = Convert.ToInt32(txtbx_input_value_5.Text);
-            }
 
 
-
-
-            switch (alakzat)
-            {
-                case "Háromszög":
-
-                    int aoldal_tri = input_value_1;
-                    int boldal_tri = input_value_2;
-                    int coldal_tri = input_value_3;
-                    int magassag_tri = input_value_4;
-                    txtbx_result_1.Text = ((aoldal_tri * magassag_tri) / 2).ToString();
-                    txtbx_result_2.Text = (aoldal_tri + boldal_tri + coldal_tri).ToString();
-
-                    break;
-                case "Négyzet":
-                    int aoldal_square= input_value_1;
-                    txtbx_result_2.Text = (4 * aoldal_square).ToString();
-                    txtbx_result_1.Text = (aoldal_square * aoldal_square).ToString();
-
-
-                    break;
-                case "Téglalap":
-                    int aoldal_brick = input_value_1;
-                    int boldal_brick = input_value_2;
-
-                    txtbx_result_2.Text = ((2 * aoldal_brick) + (2 * boldal_brick)).ToString();
-                    txtbx_result_1.Text = (aoldal_brick*boldal_brick).ToString();
-
-                    break;
-                case "Kör":
-                    int kor_sugar = input_value_1;
-                    int kor_atlo = input_value_2;
-
-                    txtbx_result_2.Text = (2 * Math.PI * kor_sugar).ToString();
-                    txtbx_result_1.Text = ((kor_sugar*kor_sugar)*Math.PI).ToString();
-
-
-                    break;
-                case "Rombusz":
-                    int aoldal_rom = input_value_1;
-                    int eatlo_rom = input_value_2;
-                    int fatlo_rom = input_value_3;
-
-                    txtbx_result_2.Text =  (4 * aoldal_rom).ToString();
-                    txtbx_result_1.Text = ((eatlo_rom * fatlo_rom) / 2).ToString();
-                    break;
-                case "Deltoid":
-                    int aoldal_del = input_value_1;
-                    int boldal_del = input_value_2;
-                    int eatlo_del = input_value_3;
-                    int fatlo_del = input_value_4;
-
-                    txtbx_result_2.Text = ((aoldal_del+boldal_del) * 2).ToString();
-                    txtbx_result_1.Text = ((eatlo_del * fatlo_del) / 2).ToString();
-
-
-                    break;
-                case "Paralelogramma":
-                    int aoldal_par = input_value_1;
-                    int boldal_par = input_value_2;
-                    int magassag_par = input_value_3;
-
-                    txtbx_result_2.Text = ((aoldal_par + boldal_par) * 2).ToString();
-                    txtbx_result_1.Text = (aoldal_par*magassag_par).ToString();
-
-
-                    break;
-                case "Trapéz":
-                    int aoldal_trap = input_value_1;
-                    int boldal_trap = input_value_2;
-                    int coldal_trap = input_value_3;
-                    int doldal_trap = input_value_4;
-                    int magassag_trap = input_value_4;
-
-                    txtbx_result_2.Text = (aoldal_trap + boldal_trap + coldal_trap + doldal_trap).ToString();
-                    txtbx_result_1.Text = ((aoldal_trap + coldal_trap) / 2 * magassag_trap).ToString();
-
-                    break;
-                case "Gúla":
-                    int gula_aolda = input_value_1;
-                    int gula_testmagassag = input_value_2;
-                    int gula_oldalmagassag = input_value_3;
-
-                    //txtbx_result_2.Text = ;
-                    //txtbx_result_1.Text = ;
-
-
-                    break;
-                case "Gömb":
-                    int gomb_sugar = input_value_1;
-                    int gomb_magassag = input_value_2;
-
-                    txtbx_result_2.Text =((Math.PI/6)* Math.Pow( gomb_sugar,3)).ToString() ;
-                    txtbx_result_1.Text = (Math.PI*(gomb_sugar*2)).ToString();
-
-                    break;
-                case "Henger":
-                    int henger_sugar = input_value_1;
-                    int henger_magassag = input_value_2;
-
-                    txtbx_result_2.Text = (((Math.PI* (henger_sugar*henger_sugar)))*henger_magassag).ToString();
-                    txtbx_result_1.Text = (((Math.PI*2)*henger_sugar)*(henger_sugar+henger_magassag)).ToString();
-                    break;
-            }
+            
             
         }
 
@@ -174,7 +184,16 @@ namespace TerFelSzoft
             {
                 pctbx_alakzat.SendToBack();
             }
-            
+            txtbx_input_value_1.Text = "";
+            txtbx_input_value_2.Text = "";
+            txtbx_input_value_3.Text = "";
+            txtbx_input_value_4.Text = "";
+            txtbx_input_value_5.Text = "";
+
+            txtbx_result_1.Text = "";
+            txtbx_result_2.Text = "";
+
+
             lbl_input_value_1.Visible = false;
             lbl_input_value_2.Visible = false;
             lbl_input_value_3.Visible = false;
@@ -513,14 +532,9 @@ namespace TerFelSzoft
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
                         lbl_input_value_1.Text = "sugár:";
-                        lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "Átló:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
-                        lbl_input_value_2.Visible = true;
-                        txtbx_input_value_2.Visible = true;
-                        lbl_mertekegyseg_2.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB2";
@@ -629,14 +643,9 @@ namespace TerFelSzoft
                     {
                         lbl_mertekegyseg_1.Text = "Cm";
                         lbl_input_value_1.Text = "sugár:";
-                        lbl_mertekegyseg_2.Text = "Cm";
-                        lbl_input_value_2.Text = "Átfogó:";
                         lbl_input_value_1.Visible = true;
                         txtbx_input_value_1.Visible = true;
                         lbl_mertekegyseg_1.Visible = true;
-                        lbl_input_value_2.Visible = true;
-                        txtbx_input_value_2.Visible = true;
-                        lbl_mertekegyseg_2.Visible = true;
                         rchtxtbx_egyenlet.Visible = true;
 
                         lbl_output_measure_1.Text = "Cm\xB3";
