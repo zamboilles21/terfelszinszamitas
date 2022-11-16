@@ -157,8 +157,8 @@ namespace TerFelSzoft
                         int gomb_sugar = input_value_1;
 
 
-                        txtbx_result_2.Text =  (Math.PI * (Math.Pow(gomb_sugar * 2, 2))).ToString();
-                        txtbx_result_1.Text = ((Math.PI / 6) * Math.Pow(gomb_sugar, 3)).ToString();
+                        txtbx_result_2.Text =                                                                             (1, 25 * (Math.PI * Math.Pow(gomb_sugar, 3))).ToString();//(Math.PI * (Math.Pow(gomb_sugar * 2, 2))).ToString();
+                        txtbx_result_1.Text =                                                                            (4 * Math.PI * Math.Pow(gomb_sugar, 2)).ToString();//((Math.PI / 6) * Math.Pow(gomb_sugar, 3)).ToString();
 
                         break;
                     case "Henger":
@@ -471,7 +471,7 @@ namespace TerFelSzoft
                         pctbx_alakzat.Height = 280;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 380, combo_alakzatok.Location.Y-10);
                         rchtxtbx_egyenlet.Visible = true;
-                        rchtxtbx_egyenlet.Text = "\n -Rombusz területe: K = 4a \n -Rombusz kerülete: T = ef/2 = a2 sin α";
+                        rchtxtbx_egyenlet.Text = "\n-Rombusz kerülete: T = ef/2 = a2 sin α \n  -Rombusz területe: K = 4a ";
 
                         lbl_result_1.Visible = true;
                         lbl_result_1.Text = "Terület:";
