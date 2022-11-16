@@ -89,8 +89,11 @@ namespace TerFelSzoft
 
                     break;
                 case "Kör":
+                    int kor_sugar = input_value_1;
+                    int kor_atlo = input_value_2;
 
-                    
+                    txtbx_result_2.Text = (2 * Math.PI * kor_sugar).ToString();
+                    txtbx_result_1.Text = ((kor_sugar*kor_sugar)*Math.PI).ToString();
 
 
                     break;
@@ -135,13 +138,29 @@ namespace TerFelSzoft
 
                     break;
                 case "Gúla":
+                    int gula_aolda = input_value_1;
+                    int gula_testmagassag = input_value_2;
+                    int gula_oldalmagassag = input_value_3;
+
+                    //txtbx_result_2.Text = ;
+                    //txtbx_result_1.Text = ;
+
 
                     break;
                 case "Gömb":
+                    int gomb_sugar = input_value_1;
+                    int gomb_magassag = input_value_2;
+
+                    txtbx_result_2.Text =((Math.PI/6)* Math.Pow( gomb_sugar,3)).ToString() ;
+                    txtbx_result_1.Text = (Math.PI*(gomb_sugar*2)).ToString();
 
                     break;
                 case "Henger":
+                    int henger_sugar = input_value_1;
+                    int henger_magassag = input_value_2;
 
+                    txtbx_result_2.Text = (((Math.PI* (henger_sugar*henger_sugar)))*henger_magassag).ToString();
+                    txtbx_result_1.Text = (((Math.PI*2)*henger_sugar)*(henger_sugar+henger_magassag)).ToString();
                     break;
             }
             
