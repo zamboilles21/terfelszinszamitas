@@ -1,4 +1,42 @@
-
+body{
+    background-image: url(../HelperImages/1092758.webp);
+}
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: red;
+  }
+  
+  a:active {
+    background-color: orangered;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.flex-container {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav{
+    background-color: orange;
+    
+    height: 70px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
 #fcf-form {
     display:block;
 }
