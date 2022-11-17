@@ -1,5 +1,5 @@
 body{
-    background-image: url(../HelperImages/1092758.webp);
+    background-image: url(../HelperImages/1658703574_13-papik-pro-p-solid-background-without-13.jpg);
 }
 a:link {
     text-decoration: none;
@@ -49,7 +49,7 @@ a:link {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: whitesmoke;
     padding: 30px;
     padding-bottom: 10px;
     border: 1px solid #ced4da;
@@ -161,13 +161,13 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color: #007bff;
+    background-color: limegreen;
     border-color: #007bff;
 }
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
+    background-color: greenyellow;
     border-color: #0062cc;
 }
 

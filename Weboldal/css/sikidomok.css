@@ -1,24 +1,23 @@
-.parent {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  margin-top: 15px;
-  padding: 25px;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 2 / 2; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div2 { grid-area: 1 / 2 / 2 / 3; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div3 { grid-area: 1 / 3 / 2 / 4; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div4 { grid-area: 1 / 4 / 2 / 5; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div5 { grid-area: 2 / 1 / 3 / 2; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div6 { grid-area: 2 / 2 / 3 / 3; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div7 { grid-area: 2 / 3 / 3 / 4; background-color: gray; border: solid black 2px; padding: 5px;}
-  .div8 { grid-area: 2 / 4 / 3 / 5; background-color: gray; border: solid black 2px; padding: 5px;}
-.parent img{
-  width: 250px;
-  height: auto;
+
+.container{
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin: auto;
+  padding: 60px;
+  height: 40%;
+  width: fit-content;
+}
+.container div{
+  background-color: #A9A9A9;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+.container img{
+  width: 100%;
+  height: fit-content;
 }
 a:link {
     text-decoration: none;
@@ -49,12 +48,12 @@ a:link {
   nav{
     background-color: orange;
     
-    height: 70px;
+    height: 60px;
     align-content: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
 }
 .example::-webkit-scrollbar {
     display: none;
@@ -64,9 +63,10 @@ a:link {
     scrollbar-width: none;  
   }
   body{
-      background-image: url(../HelperImages/geometric-shapes-flat-background_23-2148380469.webp);
+      background-image: url(../HelperImages/1658703574_13-papik-pro-p-solid-background-without-13.jpg);
       background-position: center;
       background-repeat: repeat;
       background-size: auto;
+      font-family: -apple-system, Arial, sans-serif;
      
   }
