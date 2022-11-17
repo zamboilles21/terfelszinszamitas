@@ -26,44 +26,49 @@ namespace TerFelSzoft
 
         private void btn_calc_Click(object sender, EventArgs e)
         {
-            bool notint_input_1 = txtbx_input_value_1.Text.All(Char.IsDigit);
-            bool notint_input_2 = txtbx_input_value_2.Text.All(Char.IsDigit);
-            bool notint_input_3 = txtbx_input_value_3.Text.All(Char.IsDigit);
-            bool notint_input_4 = txtbx_input_value_4.Text.All(Char.IsDigit);
-            bool notint_input_5 = txtbx_input_value_5.Text.All(Char.IsDigit);
 
-            if (!notint_input_1||!notint_input_2||!notint_input_3||!notint_input_4||!notint_input_5)
+
+
+            /*
+            bool notdouble_input_1 = txtbx_input_value_1.Text.All(Char.IsDigit);
+            bool notdouble_input_2 = txtbx_input_value_1.Text.All(Char.IsDigit);
+            bool notdouble_input_3 = txtbx_input_value_1.Text.All(Char.IsDigit);
+            bool notdouble_input_4 = txtbx_input_value_1.Text.All(Char.IsDigit);
+            bool notdouble_input_5 = txtbx_input_value_1.Text.All(Char.IsDigit);
+            
+            if (!notdouble_input_1||!notdouble_input_2||!notdouble_input_3||!notdouble_input_4||!notdouble_input_5)
             {
                 MessageBox.Show("Nem számot adott meg!");
             }
             else
+            */
             {
-                int input_value_1 = 0;
-                int input_value_2 = 0;
-                int input_value_3 = 0;
-                int input_value_4 = 0;
-                int input_value_5 = 0;
+                double input_value_1 = 0;
+                double input_value_2 = 0;
+                double input_value_3 = 0;
+                double input_value_4 = 0;
+                double input_value_5 = 0;
 
 
                 if (txtbx_input_value_1.Text != "")
                 {
-                    input_value_1 = Convert.ToInt32(txtbx_input_value_1.Text);
+                    input_value_1 = Convert.ToDouble(txtbx_input_value_1.Text);
                 }
                 if (txtbx_input_value_2.Text != "")
                 {
-                    input_value_2 = Convert.ToInt32(txtbx_input_value_2.Text);
+                    input_value_2 = Convert.ToDouble(txtbx_input_value_2.Text);
                 }
                 if (txtbx_input_value_3.Text != "")
                 {
-                    input_value_3 = Convert.ToInt32(txtbx_input_value_3.Text);
+                    input_value_3 = Convert.ToDouble(txtbx_input_value_3.Text);
                 }
                 if (txtbx_input_value_4.Text != "")
                 {
-                    input_value_4 = Convert.ToInt32(txtbx_input_value_4.Text);
+                    input_value_4 = Convert.ToDouble(txtbx_input_value_4.Text);
                 }
                 if (txtbx_input_value_5.Text != "")
                 {
-                    input_value_5 = Convert.ToInt32(txtbx_input_value_5.Text);
+                    input_value_5 = Convert.ToDouble(txtbx_input_value_5.Text);
                 }
 
 
@@ -73,107 +78,143 @@ namespace TerFelSzoft
                 {
                     case "Háromszög":
 
-                        int aoldal_tri = input_value_1;
-                        int boldal_tri = input_value_2;
-                        int coldal_tri = input_value_3;
-                        int magassag_tri = input_value_4;
-                        txtbx_result_1.Text = ((aoldal_tri * magassag_tri) / 2).ToString();
-                        txtbx_result_2.Text = (aoldal_tri + boldal_tri + coldal_tri).ToString();
+                        double aoldal_tri = input_value_1;
+                        double boldal_tri = input_value_2;
+                        double coldal_tri = input_value_3;
+                        double magassag_tri = input_value_4;
+                        txtbx_result_1.Text = ((aoldal_tri * magassag_tri) / 2).ToString("0.00");
+                        txtbx_result_2.Text = (aoldal_tri + boldal_tri + coldal_tri).ToString("0.00");
+
+
+                        korabbi.Items.Add("Háromszög: a oldal: "+aoldal_tri+"cm b oldal: "+boldal_tri+"cm c oldal: "+coldal_tri+"cm magasság: "+magassag_tri+"cm");
+                        korabbi.Items.Add("Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text + "cm\xB2");
 
                         break;
                     case "Négyzet":
-                        int aoldal_square = input_value_1;
-                        txtbx_result_2.Text = (4 * aoldal_square).ToString();
-                        txtbx_result_1.Text = (aoldal_square * aoldal_square).ToString();
+                        double aoldal_square = input_value_1;
+                        txtbx_result_2.Text = (4 * aoldal_square).ToString("0.00");
+                        txtbx_result_1.Text = (aoldal_square * aoldal_square).ToString("0.00");
 
-
+                        korabbi.Items.Add("Négyzet: a oldal: " + aoldal_square+ "cm Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text+ "cm\xB2");
+                        
                         break;
                     case "Téglalap":
-                        int aoldal_brick = input_value_1;
-                        int boldal_brick = input_value_2;
+                        double aoldal_brick = input_value_1;
+                        double boldal_brick = input_value_2;
 
-                        txtbx_result_2.Text = ((2 * aoldal_brick) + (2 * boldal_brick)).ToString();
-                        txtbx_result_1.Text = (aoldal_brick * boldal_brick).ToString();
+                        txtbx_result_2.Text = ((2 * aoldal_brick) + (2 * boldal_brick)).ToString("0.00");
+                        txtbx_result_1.Text = (aoldal_brick * boldal_brick).ToString("0.00");
 
+                        korabbi.Items.Add("Téglalap: a oldal: " + aoldal_brick + "cm" + " b oldal: "+boldal_brick +"cm Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text + "cm\xB2");
                         break;
                     case "Kör":
-                        int kor_sugar = input_value_1;
+                        double kor_sugar = input_value_1;
 
-                        txtbx_result_2.Text = (2 * Math.PI * kor_sugar).ToString();
-                        txtbx_result_1.Text = ((kor_sugar * kor_sugar) * Math.PI).ToString();
+                        txtbx_result_2.Text = (2 * Math.PI * kor_sugar).ToString("0.00");
+                        txtbx_result_1.Text =((kor_sugar * kor_sugar) * Math.PI).ToString("0.00");
 
+                        korabbi.Items.Add("Kör: sugár: " +kor_sugar+"cm Kerület: "+txtbx_result_2.Text+"cm Terület"+txtbx_result_1.Text+ "cm\xB2");
 
                         break;
                     case "Rombusz":
-                        int aoldal_rom = input_value_1;
-                        int eatlo_rom = input_value_2;
-                        int fatlo_rom = input_value_3;
+                        double aoldal_rom = input_value_1;
+                        double eatlo_rom = input_value_2;
+                        double fatlo_rom = input_value_3;
 
-                        txtbx_result_2.Text = (4 * aoldal_rom).ToString();
-                        txtbx_result_1.Text = ((eatlo_rom * fatlo_rom) / 2).ToString();
+                        if (aoldal_rom==0)
+                        {
+
+                            txtbx_result_2.Text = (2 * (Math.Sqrt((Math.Pow(eatlo_rom, 2) + (Math.Pow(fatlo_rom, 2)))))).ToString("0.00");
+                        }
+                        else
+                        {
+                            txtbx_result_2.Text = (4 * aoldal_rom).ToString("0.00");
+                            
+                        }
+
+                        korabbi.Items.Add("Rombusz: a oldal: " + aoldal_rom + "cm e átló: " + eatlo_rom + "cm f átló: " + fatlo_rom + "cm");
+                        korabbi.Items.Add("Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text + "cm\xB2");
+
+                        txtbx_result_1.Text = ((eatlo_rom * fatlo_rom) / 2).ToString("0.00");
                         break;
                     case "Deltoid":
-                        int aoldal_del = input_value_1;
-                        int boldal_del = input_value_2;
-                        int eatlo_del = input_value_3;
-                        int fatlo_del = input_value_4;
+                        double aoldal_del = input_value_1;
+                        double boldal_del = input_value_2;
+                        double eatlo_del = input_value_3;
+                        double fatlo_del = input_value_4;
 
-                        txtbx_result_2.Text = ((aoldal_del + boldal_del) * 2).ToString();
-                        txtbx_result_1.Text = ((eatlo_del * fatlo_del) / 2).ToString();
+                        txtbx_result_2.Text = ((aoldal_del + boldal_del) * 2).ToString("0.00");
+                        txtbx_result_1.Text = ((eatlo_del * fatlo_del) / 2).ToString("0.00");
 
 
+                        korabbi.Items.Add("Deltoid: a oldal: " + aoldal_del + "cm b oldal: " + boldal_del + "cm e átló: " + eatlo_del + "cm f átló: " + fatlo_del + "cm");
+                        korabbi.Items.Add("Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text + "cm\xB2");
                         break;
                     case "Paralelogramma":
-                        int aoldal_par = input_value_1;
-                        int boldal_par = input_value_2;
-                        int magassag_par = input_value_3;
+                        double aoldal_par = input_value_1;
+                        double boldal_par = input_value_2;
+                        double magassag_par = input_value_3;
 
-                        txtbx_result_2.Text = ((aoldal_par + boldal_par) * 2).ToString();
-                        txtbx_result_1.Text = (aoldal_par * magassag_par).ToString();
+                        txtbx_result_2.Text = ((aoldal_par + boldal_par) * 2).ToString("0.00");
+                        txtbx_result_1.Text = (aoldal_par * magassag_par).ToString("0.00");
 
-
+                        korabbi.Items.Add("Paralelogramma: a oldal: " + aoldal_par + "cm b oldal: " + boldal_par + "cm magasság: "+ magassag_par + "cm");
+                        korabbi.Items.Add("Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text + "cm\xB2");
                         break;
                     case "Trapéz":
-                        int aoldal_trap = input_value_1;
-                        int boldal_trap = input_value_2;
-                        int coldal_trap = input_value_3;
-                        int doldal_trap = input_value_4;
-                        int magassag_trap = input_value_5;
+                        double aoldal_trap = input_value_1;
+                        double boldal_trap = input_value_2;
+                        double coldal_trap = input_value_3;
+                        double doldal_trap = input_value_4;
+                        double magassag_trap = input_value_5;
 
-                        txtbx_result_2.Text = (aoldal_trap + boldal_trap + coldal_trap + doldal_trap).ToString();
-                        txtbx_result_1.Text = ((aoldal_trap + coldal_trap) / 2 * magassag_trap).ToString();
+                        txtbx_result_2.Text = (aoldal_trap + boldal_trap + coldal_trap + doldal_trap).ToString("0.00");
+                        txtbx_result_1.Text = ((aoldal_trap + coldal_trap) / 2 * magassag_trap).ToString("0.00");
 
+                        korabbi.Items.Add("Trapéz: a oldal: " + aoldal_trap + "cm b oldal: " + boldal_trap + "cm c oldal: " + coldal_trap + "cm d oldal: " + doldal_trap + "cm magasság: "+magassag_trap+"cm");
+                        korabbi.Items.Add("Kerület: " + txtbx_result_2.Text + "cm Terület: " + txtbx_result_1.Text + "cm\xB2");
                         break;
                     case "Gúla":
-                        int gula_aoldal = input_value_1;
-                        int gula_testmagassag = input_value_2;
-                        int gula_oldalmagassag = input_value_3;
+                        double gula_aoldal = input_value_1;
+                        double gula_testmagassag = input_value_2;
+                        double gula_oldalmagassag = input_value_3;
 
-                        txtbx_result_2.Text = ((gula_testmagassag * Math.Pow(gula_aoldal, 2)) / 3).ToString();
-                        txtbx_result_1.Text = (Math.Pow(gula_aoldal, 2) + ((gula_aoldal * gula_oldalmagassag) / 2)).ToString();
+                        txtbx_result_2.Text = ((gula_testmagassag * Math.Pow(gula_aoldal, 2)) / 3).ToString("0.00");
+                        txtbx_result_1.Text = (Math.Pow(gula_aoldal, 2) + ((gula_aoldal * gula_oldalmagassag) / 2)).ToString("0.00");
 
+                        korabbi.Items.Add("Gúla: a oldal: " + gula_aoldal + "cm testmagasság: " + gula_testmagassag + "cm oldalmagasság: " + gula_oldalmagassag + "cm");
+                        korabbi.Items.Add("Felszín: " + txtbx_result_2.Text + "cm\xB2 Térfogat: " + txtbx_result_1.Text + "cm\xB3");
                         break;
                     case "Gömb":
-                        int gomb_sugar = input_value_1;
+                        double gomb_sugar = input_value_1;
 
 
-                        txtbx_result_2.Text =                                                                             (1, 25 * (Math.PI * Math.Pow(gomb_sugar, 3))).ToString();//(Math.PI * (Math.Pow(gomb_sugar * 2, 2))).ToString();
-                        txtbx_result_1.Text =                                                                            (4 * Math.PI * Math.Pow(gomb_sugar, 2)).ToString();//((Math.PI / 6) * Math.Pow(gomb_sugar, 3)).ToString();
+                        txtbx_result_1.Text = (((Math.PI*(Math.Pow(gomb_sugar, 3)))/3)*4).ToString("0.00");
+                        txtbx_result_2.Text =(4 * Math.PI * Math.Pow(gomb_sugar, 2)).ToString("0.00");
 
+                        korabbi.Items.Add("Gömb: sugár: " + gomb_sugar+ "cm");
+                        korabbi.Items.Add("Felszín: " + txtbx_result_2.Text + "cm\xB2 Térfogat: " + txtbx_result_1.Text + "cm\xB3");
                         break;
                     case "Henger":
-                        int henger_sugar = input_value_1;
-                        int henger_magassag = input_value_2;
+                        double henger_sugar = input_value_1;
+                        double henger_magassag = input_value_2;
 
-                        txtbx_result_2.Text = (((Math.PI * (henger_sugar * henger_sugar))) * henger_magassag).ToString();
-                        txtbx_result_1.Text = (((Math.PI * 2) * henger_sugar) * (henger_sugar + henger_magassag)).ToString();
+                        txtbx_result_2.Text = (((Math.PI * (henger_sugar * henger_sugar))) * henger_magassag).ToString("0.00");
+                        txtbx_result_1.Text = (((Math.PI * 2) * henger_sugar) * (henger_sugar + henger_magassag)).ToString("0.00");
+
+                        korabbi.Items.Add("Gömb: sugár: " + henger_sugar + "cm magasság: "+henger_magassag);
+                        korabbi.Items.Add("Felszín: " + txtbx_result_2.Text + "cm\xB2 Térfogat: " + txtbx_result_1.Text + "cm\xB3");
                         break;
                 }
             }
+            if (korabbi.Items.Count>0)
+            {
+                korabbi.Visible = true;
+            }
+            
 
 
-            
-            
+
         }
 
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)

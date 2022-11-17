@@ -38,11 +38,6 @@ namespace TerFelSzoft
             this.lbl_input_value_3 = new System.Windows.Forms.Label();
             this.lbl_input_value_4 = new System.Windows.Forms.Label();
             this.lbl_input_value_5 = new System.Windows.Forms.Label();
-            this.txtbx_input_value_1 = new System.Windows.Forms.TextBox();
-            this.txtbx_input_value_2 = new System.Windows.Forms.TextBox();
-            this.txtbx_input_value_3 = new System.Windows.Forms.TextBox();
-            this.txtbx_input_value_4 = new System.Windows.Forms.TextBox();
-            this.txtbx_input_value_5 = new System.Windows.Forms.TextBox();
             this.lbl_mertekegyseg_5 = new System.Windows.Forms.Label();
             this.lbl_mertekegyseg_4 = new System.Windows.Forms.Label();
             this.lbl_mertekegyseg_3 = new System.Windows.Forms.Label();
@@ -56,7 +51,17 @@ namespace TerFelSzoft
             this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
             this.lbl_output_measure_2 = new System.Windows.Forms.Label();
             this.lbl_output_measure_1 = new System.Windows.Forms.Label();
+            this.txtbx_input_value_1 = new System.Windows.Forms.NumericUpDown();
+            this.txtbx_input_value_2 = new System.Windows.Forms.NumericUpDown();
+            this.txtbx_input_value_3 = new System.Windows.Forms.NumericUpDown();
+            this.txtbx_input_value_4 = new System.Windows.Forms.NumericUpDown();
+            this.txtbx_input_value_5 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_5)).BeginInit();
             this.SuspendLayout();
             // 
             // combo_alakzatok
@@ -90,16 +95,16 @@ namespace TerFelSzoft
             // korabbi
             // 
             this.korabbi.BackColor = System.Drawing.Color.DarkSalmon;
-            this.korabbi.Enabled = false;
             this.korabbi.FormattingEnabled = true;
-            this.korabbi.Location = new System.Drawing.Point(668, 343);
+            this.korabbi.Location = new System.Drawing.Point(420, 343);
             this.korabbi.Name = "korabbi";
-            this.korabbi.Size = new System.Drawing.Size(120, 95);
+            this.korabbi.Size = new System.Drawing.Size(368, 95);
             this.korabbi.TabIndex = 1;
+            this.korabbi.Visible = false;
             // 
             // btn_calc
             // 
-            this.btn_calc.Location = new System.Drawing.Point(362, 415);
+            this.btn_calc.Location = new System.Drawing.Point(299, 415);
             this.btn_calc.Name = "btn_calc";
             this.btn_calc.Size = new System.Drawing.Size(75, 23);
             this.btn_calc.TabIndex = 3;
@@ -161,46 +166,6 @@ namespace TerFelSzoft
             this.lbl_input_value_5.TabIndex = 10;
             this.lbl_input_value_5.Text = "label5";
             this.lbl_input_value_5.Visible = false;
-            // 
-            // txtbx_input_value_1
-            // 
-            this.txtbx_input_value_1.Location = new System.Drawing.Point(105, 272);
-            this.txtbx_input_value_1.Name = "txtbx_input_value_1";
-            this.txtbx_input_value_1.Size = new System.Drawing.Size(100, 20);
-            this.txtbx_input_value_1.TabIndex = 11;
-            this.txtbx_input_value_1.Visible = false;
-            // 
-            // txtbx_input_value_2
-            // 
-            this.txtbx_input_value_2.Location = new System.Drawing.Point(105, 299);
-            this.txtbx_input_value_2.Name = "txtbx_input_value_2";
-            this.txtbx_input_value_2.Size = new System.Drawing.Size(100, 20);
-            this.txtbx_input_value_2.TabIndex = 12;
-            this.txtbx_input_value_2.Visible = false;
-            // 
-            // txtbx_input_value_3
-            // 
-            this.txtbx_input_value_3.Location = new System.Drawing.Point(105, 326);
-            this.txtbx_input_value_3.Name = "txtbx_input_value_3";
-            this.txtbx_input_value_3.Size = new System.Drawing.Size(100, 20);
-            this.txtbx_input_value_3.TabIndex = 13;
-            this.txtbx_input_value_3.Visible = false;
-            // 
-            // txtbx_input_value_4
-            // 
-            this.txtbx_input_value_4.Location = new System.Drawing.Point(105, 356);
-            this.txtbx_input_value_4.Name = "txtbx_input_value_4";
-            this.txtbx_input_value_4.Size = new System.Drawing.Size(100, 20);
-            this.txtbx_input_value_4.TabIndex = 14;
-            this.txtbx_input_value_4.Visible = false;
-            // 
-            // txtbx_input_value_5
-            // 
-            this.txtbx_input_value_5.Location = new System.Drawing.Point(105, 382);
-            this.txtbx_input_value_5.Name = "txtbx_input_value_5";
-            this.txtbx_input_value_5.Size = new System.Drawing.Size(100, 20);
-            this.txtbx_input_value_5.TabIndex = 15;
-            this.txtbx_input_value_5.Visible = false;
             // 
             // lbl_mertekegyseg_5
             // 
@@ -341,12 +306,87 @@ namespace TerFelSzoft
             this.lbl_output_measure_1.Text = "label1";
             this.lbl_output_measure_1.Visible = false;
             // 
+            // txtbx_input_value_1
+            // 
+            this.txtbx_input_value_1.DecimalPlaces = 1;
+            this.txtbx_input_value_1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtbx_input_value_1.Location = new System.Drawing.Point(105, 272);
+            this.txtbx_input_value_1.Name = "txtbx_input_value_1";
+            this.txtbx_input_value_1.Size = new System.Drawing.Size(100, 20);
+            this.txtbx_input_value_1.TabIndex = 28;
+            this.txtbx_input_value_1.Visible = false;
+            // 
+            // txtbx_input_value_2
+            // 
+            this.txtbx_input_value_2.DecimalPlaces = 1;
+            this.txtbx_input_value_2.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtbx_input_value_2.Location = new System.Drawing.Point(105, 298);
+            this.txtbx_input_value_2.Name = "txtbx_input_value_2";
+            this.txtbx_input_value_2.Size = new System.Drawing.Size(100, 20);
+            this.txtbx_input_value_2.TabIndex = 29;
+            this.txtbx_input_value_2.Visible = false;
+            // 
+            // txtbx_input_value_3
+            // 
+            this.txtbx_input_value_3.DecimalPlaces = 1;
+            this.txtbx_input_value_3.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtbx_input_value_3.Location = new System.Drawing.Point(105, 326);
+            this.txtbx_input_value_3.Name = "txtbx_input_value_3";
+            this.txtbx_input_value_3.Size = new System.Drawing.Size(100, 20);
+            this.txtbx_input_value_3.TabIndex = 30;
+            this.txtbx_input_value_3.Visible = false;
+            // 
+            // txtbx_input_value_4
+            // 
+            this.txtbx_input_value_4.DecimalPlaces = 1;
+            this.txtbx_input_value_4.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtbx_input_value_4.Location = new System.Drawing.Point(105, 352);
+            this.txtbx_input_value_4.Name = "txtbx_input_value_4";
+            this.txtbx_input_value_4.Size = new System.Drawing.Size(100, 20);
+            this.txtbx_input_value_4.TabIndex = 31;
+            this.txtbx_input_value_4.Visible = false;
+            // 
+            // txtbx_input_value_5
+            // 
+            this.txtbx_input_value_5.DecimalPlaces = 1;
+            this.txtbx_input_value_5.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtbx_input_value_5.Location = new System.Drawing.Point(105, 378);
+            this.txtbx_input_value_5.Name = "txtbx_input_value_5";
+            this.txtbx_input_value_5.Size = new System.Drawing.Size(100, 20);
+            this.txtbx_input_value_5.TabIndex = 32;
+            this.txtbx_input_value_5.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtbx_input_value_5);
+            this.Controls.Add(this.txtbx_input_value_4);
+            this.Controls.Add(this.txtbx_input_value_3);
+            this.Controls.Add(this.txtbx_input_value_2);
+            this.Controls.Add(this.txtbx_input_value_1);
             this.Controls.Add(this.lbl_output_measure_2);
             this.Controls.Add(this.lbl_output_measure_1);
             this.Controls.Add(this.rchtxtbx_egyenlet);
@@ -359,11 +399,6 @@ namespace TerFelSzoft
             this.Controls.Add(this.lbl_mertekegyseg_3);
             this.Controls.Add(this.lbl_mertekegyseg_2);
             this.Controls.Add(this.lbl_mertekegyseg_1);
-            this.Controls.Add(this.txtbx_input_value_5);
-            this.Controls.Add(this.txtbx_input_value_4);
-            this.Controls.Add(this.txtbx_input_value_3);
-            this.Controls.Add(this.txtbx_input_value_2);
-            this.Controls.Add(this.txtbx_input_value_1);
             this.Controls.Add(this.lbl_input_value_5);
             this.Controls.Add(this.lbl_input_value_4);
             this.Controls.Add(this.lbl_input_value_3);
@@ -379,6 +414,11 @@ namespace TerFelSzoft
             this.Name = "Form1";
             this.Text = "TérFelszín számítóka";
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,11 +435,6 @@ namespace TerFelSzoft
         private System.Windows.Forms.Label lbl_input_value_3;
         private System.Windows.Forms.Label lbl_input_value_4;
         private System.Windows.Forms.Label lbl_input_value_5;
-        private System.Windows.Forms.TextBox txtbx_input_value_1;
-        private System.Windows.Forms.TextBox txtbx_input_value_2;
-        private System.Windows.Forms.TextBox txtbx_input_value_3;
-        private System.Windows.Forms.TextBox txtbx_input_value_4;
-        private System.Windows.Forms.TextBox txtbx_input_value_5;
         private System.Windows.Forms.Label lbl_mertekegyseg_5;
         private System.Windows.Forms.Label lbl_mertekegyseg_4;
         private System.Windows.Forms.Label lbl_mertekegyseg_3;
@@ -412,6 +447,11 @@ namespace TerFelSzoft
         private System.Windows.Forms.RichTextBox rchtxtbx_egyenlet;
         private System.Windows.Forms.Label lbl_output_measure_2;
         private System.Windows.Forms.Label lbl_output_measure_1;
+        private System.Windows.Forms.NumericUpDown txtbx_input_value_1;
+        private System.Windows.Forms.NumericUpDown txtbx_input_value_2;
+        private System.Windows.Forms.NumericUpDown txtbx_input_value_3;
+        private System.Windows.Forms.NumericUpDown txtbx_input_value_4;
+        private System.Windows.Forms.NumericUpDown txtbx_input_value_5;
     }
 }
 

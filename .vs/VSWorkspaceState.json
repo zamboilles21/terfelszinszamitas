@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Software",
+    "\\Software\\TerFelSzoft",
+    "\\Software\\TerFelSzoft\\TerFelSzoft"
   ],
-  "SelectedNode": "\\D:\\git\\git",
+  "SelectedNode": "\\Software\\TerFelSzoft\\TerFelSzoft\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
