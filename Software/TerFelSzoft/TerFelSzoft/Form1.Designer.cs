@@ -110,6 +110,7 @@ namespace TerFelSzoft
             this.btn_calc.TabIndex = 3;
             this.btn_calc.Text = "Számítás";
             this.btn_calc.UseVisualStyleBackColor = true;
+            this.btn_calc.Visible = false;
             this.btn_calc.Click += new System.EventHandler(this.btn_calc_Click);
             // 
             // lbl_input_value_1

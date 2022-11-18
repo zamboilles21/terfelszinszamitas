@@ -199,8 +199,8 @@ namespace TerFelSzoft
                         double henger_sugar = input_value_1;
                         double henger_magassag = input_value_2;
 
-                        txtbx_result_2.Text = (((Math.PI * (henger_sugar * henger_sugar))) * henger_magassag).ToString("0.00");
-                        txtbx_result_1.Text = (((Math.PI * 2) * henger_sugar) * (henger_sugar + henger_magassag)).ToString("0.00");
+                        txtbx_result_1.Text = (((Math.PI * (henger_sugar * henger_sugar))) * henger_magassag).ToString("0.00");
+                        txtbx_result_2.Text = (((Math.PI * 2) * henger_sugar) * (henger_sugar + henger_magassag)).ToString("0.00");
 
                         korabbi.Items.Add("Gömb: sugár: " + henger_sugar + "cm magasság: "+henger_magassag);
                         korabbi.Items.Add("Felszín: " + txtbx_result_2.Text + "cm\xB2 Térfogat: " + txtbx_result_1.Text + "cm\xB3");
@@ -219,7 +219,7 @@ namespace TerFelSzoft
 
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            btn_calc.Visible = true;
             
             for (int i = 0; i < 10; i++)
             {
