@@ -316,10 +316,17 @@ namespace TerFelSzoft
             0,
             65536});
             this.txtbx_input_value_1.Location = new System.Drawing.Point(105, 272);
+            this.txtbx_input_value_1.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
             this.txtbx_input_value_1.Name = "txtbx_input_value_1";
             this.txtbx_input_value_1.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_1.TabIndex = 28;
             this.txtbx_input_value_1.Visible = false;
+            this.txtbx_input_value_1.Enter += new System.EventHandler(this.txtbx_input_value_1_Enter);
+            this.txtbx_input_value_1.Leave += new System.EventHandler(this.txtbx_input_value_1_Leave);
             // 
             // txtbx_input_value_2
             // 
@@ -330,6 +337,11 @@ namespace TerFelSzoft
             0,
             65536});
             this.txtbx_input_value_2.Location = new System.Drawing.Point(105, 298);
+            this.txtbx_input_value_2.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
             this.txtbx_input_value_2.Name = "txtbx_input_value_2";
             this.txtbx_input_value_2.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_2.TabIndex = 29;
@@ -344,6 +356,11 @@ namespace TerFelSzoft
             0,
             65536});
             this.txtbx_input_value_3.Location = new System.Drawing.Point(105, 326);
+            this.txtbx_input_value_3.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
             this.txtbx_input_value_3.Name = "txtbx_input_value_3";
             this.txtbx_input_value_3.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_3.TabIndex = 30;
@@ -358,6 +375,11 @@ namespace TerFelSzoft
             0,
             65536});
             this.txtbx_input_value_4.Location = new System.Drawing.Point(105, 352);
+            this.txtbx_input_value_4.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
             this.txtbx_input_value_4.Name = "txtbx_input_value_4";
             this.txtbx_input_value_4.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_4.TabIndex = 31;
@@ -372,6 +394,11 @@ namespace TerFelSzoft
             0,
             65536});
             this.txtbx_input_value_5.Location = new System.Drawing.Point(105, 378);
+            this.txtbx_input_value_5.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
             this.txtbx_input_value_5.Name = "txtbx_input_value_5";
             this.txtbx_input_value_5.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_5.TabIndex = 32;
