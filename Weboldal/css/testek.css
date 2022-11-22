@@ -18,21 +18,9 @@ a:link {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-.flex-container {
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+
   nav{
     background-color: orange;
-    
-    height: 70px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
 }
 .container{
   align-items: center;
