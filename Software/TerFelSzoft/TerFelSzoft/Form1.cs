@@ -343,6 +343,11 @@ namespace TerFelSzoft
             {
                 pctbx_alakzat.SendToBack();
             }
+            txtbx_input_value_1.Value = 0;
+            txtbx_input_value_2.Value = 0;
+            txtbx_input_value_3.Value = 0;
+            txtbx_input_value_4.Value = 0;
+            txtbx_input_value_5.Value = 0;
             txtbx_input_value_1.Text = "";
             txtbx_input_value_2.Text = "";
             txtbx_input_value_3.Text = "";
