@@ -131,5 +131,92 @@
   <ItemGroup>
     <None Include="Resources\tegla_water.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid_boldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid_eatlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid_fatlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle_boldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle_cmagassag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangle_coldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gomb_sugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gula_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gula_aoldalmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gula_testmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\henger_sugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\henger_testmagas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kor_sugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negyzet_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralel_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralel_boldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralel_magassag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombusz_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombusz_eatlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombusz_fatlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tegla_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tegla_boldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trap_aoldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trap_boldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trap_coldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trap_doldal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trap_magassag.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
