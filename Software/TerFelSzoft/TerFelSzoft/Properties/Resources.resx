@@ -124,11 +124,23 @@
   <data name="henger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\henger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="triangle_cmagassag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triangle_cmagassag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="paralel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\paralel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chooseashape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chooseashape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tegla_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tegla_water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_boldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deltoid_boldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_fatlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deltoid_fatlo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\rombusz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tegla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\tegla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,20 +148,32 @@
   <data name="negyzet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\negyzet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rombusz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\rombusz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="triangle_coldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triangle_coldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gula" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\gula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chooseashape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chooseashape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="modern_art" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modern_art.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="deltoid_eatlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deltoid_eatlo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="deltoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\deltoid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\gula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="triangle_boldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triangle_boldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\triangle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deltoid_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deltoid_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tukrozott_choose_a_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tukrozott_choose_a_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,10 +187,73 @@
   <data name="kor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\kor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="triangle_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triangle_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\gomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tegla_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tegla_water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gomb_sugar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gomb_sugar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gula_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gula_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gula_aoldalmag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gula_aoldalmag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gula_testmag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gula_testmag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="henger_sugar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\henger_sugar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="henger_testmagas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\henger_testmagas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kor_sugar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kor_sugar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="negyzet_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\negyzet_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralel_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paralel_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralel_boldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paralel_boldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paralel_magassag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paralel_magassag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rombusz_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_eatlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rombusz_eatlo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombusz_fatlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rombusz_fatlo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tegla_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tegla_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tegla_boldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tegla_boldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trap_aoldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trap_aoldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trap_boldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trap_boldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trap_coldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trap_coldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trap_doldal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trap_doldal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trap_magassag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trap_magassag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

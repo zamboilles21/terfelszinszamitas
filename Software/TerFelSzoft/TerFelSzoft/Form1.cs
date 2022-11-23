@@ -838,76 +838,304 @@ namespace TerFelSzoft
             {
                 case "Háromszög":
 
+                    pctbx_alakzat.Image = Properties.Resources.triangle_aoldal;
+
                     break;
                 case "Négyzet":
-
+                    pctbx_alakzat.Image = Properties.Resources.negyzet_aoldal;
                     break;
                 case "Trapéz":
-
+                    pctbx_alakzat.Image = Properties.Resources.trap_aoldal;
                     break;
                 case "Deltoid":
-
+                    pctbx_alakzat.Image = Properties.Resources.deltoid_aoldal;
                     break;
                 case "Rombusz":
-
+                    pctbx_alakzat.Image = Properties.Resources.rombusz_aoldal;
                     break;
                 case "Téglalap":
-
+                    pctbx_alakzat.Image = Properties.Resources.tegla_aoldal;
                     break;
                 case "Paralelogramma":
-
+                    pctbx_alakzat.Image = Properties.Resources.paralel_aoldal;
                     break;
                 case "Kör":
-
+                    pctbx_alakzat.Image = Properties.Resources.kor_sugar;
                     break;
                 case "Gömb":
-
+                    pctbx_alakzat.Image = Properties.Resources.gomb_sugar;
                     break;
                 case "Henger":
-
+                    pctbx_alakzat.Image = Properties.Resources.henger_sugar;
                     break;
                 case "Gúla":
-
+                    pctbx_alakzat.Image = Properties.Resources.gula_aoldal;
                     break;
             }
         }
+
 
         private void txtbx_input_value_1_Leave(object sender, EventArgs e)
         {
             switch (alakzat)
             {
                 case "Háromszög":
-
+                    pctbx_alakzat.Image = Properties.Resources.triangle;
                     break;
                 case "Négyzet":
-
+                    pctbx_alakzat.Image = Properties.Resources.negyzet;
                     break;
                 case "Trapéz":
-
+                    pctbx_alakzat.Image = Properties.Resources.trap;
                     break;
                 case "Deltoid":
-
+                    pctbx_alakzat.Image = Properties.Resources.deltoid;
                     break;
                 case "Rombusz":
-
+                    pctbx_alakzat.Image = Properties.Resources.rombusz;
                     break;
                 case "Téglalap":
-
+                    pctbx_alakzat.Image = Properties.Resources.tegla_water;
                     break;
                 case "Paralelogramma":
-
+                    pctbx_alakzat.Image = Properties.Resources.paralel;
                     break;
                 case "Kör":
+                    pctbx_alakzat.Image = Properties.Resources.kor;
 
                     break;
                 case "Gömb":
-
+                    pctbx_alakzat.Image = Properties.Resources.gomb;
                     break;
                 case "Henger":
-
+                    pctbx_alakzat.Image = Properties.Resources.henger;
                     break;
                 case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula;
+                    break;
 
+            }
+        }
+
+
+        private void txtbx_input_value_2_Enter_1(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+
+                    pctbx_alakzat.Image = Properties.Resources.triangle_boldal;
+
+                    break;
+
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap_boldal;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid_boldal;
+                    break;
+                case "Rombusz":
+                    pctbx_alakzat.Image = Properties.Resources.rombusz_eatlo;
+                    break;
+                case "Téglalap":
+                    pctbx_alakzat.Image = Properties.Resources.tegla_boldal;
+                    break;
+                case "Paralelogramma":
+                    pctbx_alakzat.Image = Properties.Resources.paralel_boldal;
+                    break;
+                case "Henger":
+                    pctbx_alakzat.Image = Properties.Resources.henger_testmagas;
+                    break;
+                case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula_testmag;
+                    break;
+            }
+        }
+
+        private void txtbx_input_value_2_Leave_1(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+                    pctbx_alakzat.Image = Properties.Resources.triangle;
+                    break;
+
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid;
+                    break;
+                case "Rombusz":
+                    pctbx_alakzat.Image = Properties.Resources.rombusz;
+                    break;
+                case "Téglalap":
+                    pctbx_alakzat.Image = Properties.Resources.tegla_water;
+                    break;
+                case "Paralelogramma":
+                    pctbx_alakzat.Image = Properties.Resources.paralel;
+                    break;
+                case "Henger":
+                    pctbx_alakzat.Image = Properties.Resources.henger;
+                    break;
+                case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula;
+                    break;
+
+            }
+        }
+
+        private void txtbx_input_value_3_Enter(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+
+                    pctbx_alakzat.Image = Properties.Resources.triangle_coldal;
+
+                    break;
+
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap_coldal;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid_eatlo;
+                    break;
+                case "Rombusz":
+                    pctbx_alakzat.Image = Properties.Resources.rombusz_fatlo;
+                    break;
+                case "Paralelogramma":
+                    pctbx_alakzat.Image = Properties.Resources.paralel_magassag;
+                    break;
+                case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula_aoldalmag;
+                    break;
+            }
+        }
+
+        private void txtbx_input_value_3_Leave(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+                    pctbx_alakzat.Image = Properties.Resources.triangle;
+                    break;
+
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid;
+                    break;
+                case "Rombusz":
+                    pctbx_alakzat.Image = Properties.Resources.rombusz;
+                    break;
+                case "Téglalap":
+                    pctbx_alakzat.Image = Properties.Resources.tegla_water;
+                    break;
+                case "Paralelogramma":
+                    pctbx_alakzat.Image = Properties.Resources.paralel;
+                    break;
+                case "Henger":
+                    pctbx_alakzat.Image = Properties.Resources.henger;
+                    break;
+                case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula;
+                    break;
+
+            }
+        }
+
+        private void txtbx_input_value_4_Enter(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+
+                    pctbx_alakzat.Image = Properties.Resources.triangle_cmagassag;
+
+                    break;
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap_doldal;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid_fatlo;
+                    break;
+            }
+        }
+
+        private void txtbx_input_value_4_Leave(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+                    pctbx_alakzat.Image = Properties.Resources.triangle;
+                    break;
+
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid;
+                    break;
+                case "Rombusz":
+                    pctbx_alakzat.Image = Properties.Resources.rombusz;
+                    break;
+                case "Téglalap":
+                    pctbx_alakzat.Image = Properties.Resources.tegla_water;
+                    break;
+                case "Paralelogramma":
+                    pctbx_alakzat.Image = Properties.Resources.paralel;
+                    break;
+                case "Henger":
+                    pctbx_alakzat.Image = Properties.Resources.henger;
+                    break;
+                case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula;
+                    break;
+
+            }
+        }
+
+        private void txtbx_input_value_5_Enter(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap_magassag;
+                    break;
+            }
+        }
+
+        private void txtbx_input_value_5_Leave(object sender, EventArgs e)
+        {
+            switch (alakzat)
+            {
+                case "Háromszög":
+                    pctbx_alakzat.Image = Properties.Resources.triangle;
+                    break;
+
+                case "Trapéz":
+                    pctbx_alakzat.Image = Properties.Resources.trap;
+                    break;
+                case "Deltoid":
+                    pctbx_alakzat.Image = Properties.Resources.deltoid;
+                    break;
+                case "Rombusz":
+                    pctbx_alakzat.Image = Properties.Resources.rombusz;
+                    break;
+                case "Téglalap":
+                    pctbx_alakzat.Image = Properties.Resources.tegla_water;
+                    break;
+                case "Paralelogramma":
+                    pctbx_alakzat.Image = Properties.Resources.paralel;
+                    break;
+                case "Henger":
+                    pctbx_alakzat.Image = Properties.Resources.henger;
+                    break;
+                case "Gúla":
+                    pctbx_alakzat.Image = Properties.Resources.gula;
                     break;
 
             }

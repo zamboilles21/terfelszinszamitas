@@ -48,7 +48,6 @@ namespace TerFelSzoft
             this.txtbx_result_2 = new System.Windows.Forms.TextBox();
             this.lbl_result_2 = new System.Windows.Forms.Label();
             this.rchtxtbx_egyenlet = new System.Windows.Forms.RichTextBox();
-            this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
             this.lbl_output_measure_2 = new System.Windows.Forms.Label();
             this.lbl_output_measure_1 = new System.Windows.Forms.Label();
             this.txtbx_input_value_1 = new System.Windows.Forms.NumericUpDown();
@@ -56,12 +55,13 @@ namespace TerFelSzoft
             this.txtbx_input_value_3 = new System.Windows.Forms.NumericUpDown();
             this.txtbx_input_value_4 = new System.Windows.Forms.NumericUpDown();
             this.txtbx_input_value_5 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).BeginInit();
+            this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).BeginInit();
             this.SuspendLayout();
             // 
             // combo_alakzatok
@@ -274,17 +274,6 @@ namespace TerFelSzoft
             this.rchtxtbx_egyenlet.Text = "";
             this.rchtxtbx_egyenlet.Visible = false;
             // 
-            // pctbx_alakzat
-            // 
-            this.pctbx_alakzat.BackColor = System.Drawing.Color.Transparent;
-            this.pctbx_alakzat.ImageLocation = "";
-            this.pctbx_alakzat.Location = new System.Drawing.Point(148, 12);
-            this.pctbx_alakzat.Name = "pctbx_alakzat";
-            this.pctbx_alakzat.Size = new System.Drawing.Size(640, 307);
-            this.pctbx_alakzat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctbx_alakzat.TabIndex = 2;
-            this.pctbx_alakzat.TabStop = false;
-            // 
             // lbl_output_measure_2
             // 
             this.lbl_output_measure_2.AutoSize = true;
@@ -346,6 +335,8 @@ namespace TerFelSzoft
             this.txtbx_input_value_2.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_2.TabIndex = 29;
             this.txtbx_input_value_2.Visible = false;
+            this.txtbx_input_value_2.Enter += new System.EventHandler(this.txtbx_input_value_2_Enter_1);
+            this.txtbx_input_value_2.Leave += new System.EventHandler(this.txtbx_input_value_2_Leave_1);
             // 
             // txtbx_input_value_3
             // 
@@ -365,6 +356,8 @@ namespace TerFelSzoft
             this.txtbx_input_value_3.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_3.TabIndex = 30;
             this.txtbx_input_value_3.Visible = false;
+            this.txtbx_input_value_3.Enter += new System.EventHandler(this.txtbx_input_value_3_Enter);
+            this.txtbx_input_value_3.Leave += new System.EventHandler(this.txtbx_input_value_3_Leave);
             // 
             // txtbx_input_value_4
             // 
@@ -384,6 +377,8 @@ namespace TerFelSzoft
             this.txtbx_input_value_4.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_4.TabIndex = 31;
             this.txtbx_input_value_4.Visible = false;
+            this.txtbx_input_value_4.Enter += new System.EventHandler(this.txtbx_input_value_4_Enter);
+            this.txtbx_input_value_4.Leave += new System.EventHandler(this.txtbx_input_value_4_Leave);
             // 
             // txtbx_input_value_5
             // 
@@ -403,6 +398,19 @@ namespace TerFelSzoft
             this.txtbx_input_value_5.Size = new System.Drawing.Size(100, 20);
             this.txtbx_input_value_5.TabIndex = 32;
             this.txtbx_input_value_5.Visible = false;
+            this.txtbx_input_value_5.Enter += new System.EventHandler(this.txtbx_input_value_5_Enter);
+            this.txtbx_input_value_5.Leave += new System.EventHandler(this.txtbx_input_value_5_Leave);
+            // 
+            // pctbx_alakzat
+            // 
+            this.pctbx_alakzat.BackColor = System.Drawing.Color.Transparent;
+            this.pctbx_alakzat.ImageLocation = "";
+            this.pctbx_alakzat.Location = new System.Drawing.Point(148, 12);
+            this.pctbx_alakzat.Name = "pctbx_alakzat";
+            this.pctbx_alakzat.Size = new System.Drawing.Size(640, 307);
+            this.pctbx_alakzat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctbx_alakzat.TabIndex = 2;
+            this.pctbx_alakzat.TabStop = false;
             // 
             // Form1
             // 
@@ -441,12 +449,12 @@ namespace TerFelSzoft
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.Text = "TérFelszín számítóka";
-            ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbx_alakzat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
