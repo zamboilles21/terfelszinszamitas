@@ -35,12 +35,12 @@ namespace TerFelSzoft
             bool notdouble_input_3 = txtbx_input_value_1.Text.Any(Char.IsDigit);
             bool notdouble_input_4 = txtbx_input_value_1.Text.Any(Char.IsDigit);
             bool notdouble_input_5 = txtbx_input_value_1.Text.Any(Char.IsDigit);
-            /*
+            
             if (!notdouble_input_1||!notdouble_input_2||!notdouble_input_3||!notdouble_input_4||!notdouble_input_5)
             {
-                MessageBox.Show("Nem számot adott meg!");
+                MessageBox.Show("Nem adott meg minden szükséges adatot");
             }
-            else*/
+            else
             {
                 double input_value_1 = 1;
                 double input_value_2 = 1;
@@ -328,6 +328,7 @@ namespace TerFelSzoft
             if (korabbi.Items.Count>0)
             {
                 korabbi.Visible = true;
+                lbl_history.Visible = true;
             }
             
 

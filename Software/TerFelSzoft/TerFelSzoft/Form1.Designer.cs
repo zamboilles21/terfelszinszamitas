@@ -56,6 +56,7 @@ namespace TerFelSzoft
             this.txtbx_input_value_4 = new System.Windows.Forms.NumericUpDown();
             this.txtbx_input_value_5 = new System.Windows.Forms.NumericUpDown();
             this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
+            this.lbl_history = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_3)).BeginInit();
@@ -412,12 +413,23 @@ namespace TerFelSzoft
             this.pctbx_alakzat.TabIndex = 2;
             this.pctbx_alakzat.TabStop = false;
             // 
+            // lbl_history
+            // 
+            this.lbl_history.AutoSize = true;
+            this.lbl_history.Location = new System.Drawing.Point(555, 328);
+            this.lbl_history.Name = "lbl_history";
+            this.lbl_history.Size = new System.Drawing.Size(67, 13);
+            this.lbl_history.TabIndex = 33;
+            this.lbl_history.Text = "Előzmények:";
+            this.lbl_history.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_history);
             this.Controls.Add(this.txtbx_input_value_5);
             this.Controls.Add(this.txtbx_input_value_4);
             this.Controls.Add(this.txtbx_input_value_3);
@@ -488,6 +500,7 @@ namespace TerFelSzoft
         private System.Windows.Forms.NumericUpDown txtbx_input_value_3;
         private System.Windows.Forms.NumericUpDown txtbx_input_value_4;
         private System.Windows.Forms.NumericUpDown txtbx_input_value_5;
+        private System.Windows.Forms.Label lbl_history;
     }
 }
 
