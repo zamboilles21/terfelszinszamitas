@@ -267,8 +267,8 @@ namespace TerFelSzoft
                             double gula_testmagassag = input_value_2;
                             double gula_oldalmagassag = input_value_3;
 
-                            txtbx_result_2.Text = ((gula_testmagassag * Math.Pow(gula_aoldal, 2)) / 3).ToString("0.00");
-                            txtbx_result_1.Text = (Math.Pow(gula_aoldal, 2) + ((gula_aoldal * gula_oldalmagassag) / 2)).ToString("0.00");
+                            txtbx_result_1.Text = ((gula_testmagassag * Math.Pow(gula_aoldal, 2)) / 3).ToString("0.00");
+                            txtbx_result_2.Text = (((4*gula_aoldal*gula_oldalmagassag)/2)+ Math.Pow(gula_aoldal,2)).ToString("0.00")   ;                                    //(Math.Pow(gula_aoldal, 2) + ((gula_aoldal * gula_oldalmagassag) / 2)).ToString("0.00");
 
                             korabbi.Items.Add("Gúla: a oldal: " + gula_aoldal + "cm testmagasság: " + gula_testmagassag + "cm oldalmagasság: " + gula_oldalmagassag + "cm");
                             korabbi.Items.Add("Felszín: " + txtbx_result_2.Text + "cm\xB2 Térfogat: " + txtbx_result_1.Text + "cm\xB3");
@@ -879,8 +879,6 @@ namespace TerFelSzoft
                     break;
             }
         }
-
-
         private void txtbx_input_value_1_Leave(object sender, EventArgs e)
         {
             switch (alakzat)
@@ -922,7 +920,6 @@ namespace TerFelSzoft
 
             }
         }
-
 
         private void txtbx_input_value_2_Enter_1(object sender, EventArgs e)
         {
