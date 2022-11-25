@@ -708,7 +708,7 @@ namespace TerFelSzoft
                         lbl_output_measure_2.Visible = true;
 
 
-                        pctbx_alakzat.Image = Properties.Resources.kor;
+                        pctbx_alakzat.Image = Properties.Resources.kor1;
                         pctbx_alakzat.Width = 400;
                         pctbx_alakzat.Height = 350;
                         pctbx_alakzat.Location = new Point(combo_alakzatok.Location.X + 420, combo_alakzatok.Location.Y+20);
@@ -907,7 +907,7 @@ namespace TerFelSzoft
                     pctbx_alakzat.Image = Properties.Resources.paralel;
                     break;
                 case "Kör":
-                    pctbx_alakzat.Image = Properties.Resources.kor;
+                    pctbx_alakzat.Image = Properties.Resources.kor1;
 
                     break;
                 case "Gömb":

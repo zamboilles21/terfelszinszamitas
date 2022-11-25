@@ -243,6 +243,16 @@ namespace TerFelSzoft.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kor1 {
+            get {
+                object obj = ResourceManager.GetObject("kor1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap modern_art {
             get {
                 object obj = ResourceManager.GetObject("modern_art", resourceCulture);

@@ -55,8 +55,8 @@ namespace TerFelSzoft
             this.txtbx_input_value_3 = new System.Windows.Forms.NumericUpDown();
             this.txtbx_input_value_4 = new System.Windows.Forms.NumericUpDown();
             this.txtbx_input_value_5 = new System.Windows.Forms.NumericUpDown();
-            this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
             this.lbl_history = new System.Windows.Forms.Label();
+            this.pctbx_alakzat = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbx_input_value_3)).BeginInit();
@@ -402,6 +402,16 @@ namespace TerFelSzoft
             this.txtbx_input_value_5.Enter += new System.EventHandler(this.txtbx_input_value_5_Enter);
             this.txtbx_input_value_5.Leave += new System.EventHandler(this.txtbx_input_value_5_Leave);
             // 
+            // lbl_history
+            // 
+            this.lbl_history.AutoSize = true;
+            this.lbl_history.Location = new System.Drawing.Point(555, 328);
+            this.lbl_history.Name = "lbl_history";
+            this.lbl_history.Size = new System.Drawing.Size(67, 13);
+            this.lbl_history.TabIndex = 33;
+            this.lbl_history.Text = "Előzmények:";
+            this.lbl_history.Visible = false;
+            // 
             // pctbx_alakzat
             // 
             this.pctbx_alakzat.BackColor = System.Drawing.Color.Transparent;
@@ -412,16 +422,6 @@ namespace TerFelSzoft
             this.pctbx_alakzat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctbx_alakzat.TabIndex = 2;
             this.pctbx_alakzat.TabStop = false;
-            // 
-            // lbl_history
-            // 
-            this.lbl_history.AutoSize = true;
-            this.lbl_history.Location = new System.Drawing.Point(555, 328);
-            this.lbl_history.Name = "lbl_history";
-            this.lbl_history.Size = new System.Drawing.Size(67, 13);
-            this.lbl_history.TabIndex = 33;
-            this.lbl_history.Text = "Előzmények:";
-            this.lbl_history.Visible = false;
             // 
             // Form1
             // 
