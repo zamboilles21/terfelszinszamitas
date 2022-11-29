@@ -218,5 +218,8 @@
   <ItemGroup>
     <None Include="Resources\trap_magassag.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kor.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
