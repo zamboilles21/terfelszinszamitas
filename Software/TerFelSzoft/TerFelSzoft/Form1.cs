@@ -18,18 +18,20 @@ namespace TerFelSzoft
         {
             InitializeComponent();
             
+            //Kezdő image amíg nincs kiválkasztva alakzat
             pctbx_alakzat.Image = Properties.Resources.modern_art;
-            rchtxtbx_egyenlet.SelectAll();
+            //Kiválasztott test egyenleteit tároló richtextbox elemeinek középre helyezése
             rchtxtbx_egyenlet.SelectionAlignment = HorizontalAlignment.Center;
 
         }
 
+        //Számítás gomb lenyomása
         private void btn_calc_Click(object sender, EventArgs e)
         {
 
 
 
-            
+            // Textbox csak számot fogad el
             bool notdouble_input_1 = txtbx_input_value_1.Text.Any(Char.IsDigit);
             bool notdouble_input_2 = txtbx_input_value_1.Text.Any(Char.IsDigit);
             bool notdouble_input_3 = txtbx_input_value_1.Text.Any(Char.IsDigit);
@@ -71,7 +73,7 @@ namespace TerFelSzoft
                     input_value_5 = Convert.ToDouble(txtbx_input_value_5.Text);
                 }
 
-                
+                //Alakzat kiválasztása, műveletek elvégése, kiírása és lementése az előzmények alatti korabbi listboxba
                     switch (alakzat)
                     {
                         case "Háromszög":
@@ -325,6 +327,7 @@ namespace TerFelSzoft
 
                 
             }
+            //korabbi listbox csak akkor jelenik meg ha nem üres
             if (korabbi.Items.Count>0)
             {
                 korabbi.Visible = true;
@@ -336,6 +339,7 @@ namespace TerFelSzoft
 
         }
 
+        //Alakzat választás
         private void combo_alakzatok_SelectedIndexChanged(object sender, EventArgs e)
         {
             btn_calc.Visible = true;
@@ -344,50 +348,54 @@ namespace TerFelSzoft
             {
                 pctbx_alakzat.SendToBack();
             }
-            txtbx_input_value_1.Value = 0;
-            txtbx_input_value_2.Value = 0;
-            txtbx_input_value_3.Value = 0;
-            txtbx_input_value_4.Value = 0;
-            txtbx_input_value_5.Value = 0;
-            txtbx_input_value_1.Text = "";
-            txtbx_input_value_2.Text = "";
-            txtbx_input_value_3.Text = "";
-            txtbx_input_value_4.Text = "";
-            txtbx_input_value_5.Text = "";
+            //Kezdő értékek nullázása
+            {
+                txtbx_input_value_1.Value = 0;
+                txtbx_input_value_2.Value = 0;
+                txtbx_input_value_3.Value = 0;
+                txtbx_input_value_4.Value = 0;
+                txtbx_input_value_5.Value = 0;
+                txtbx_input_value_1.Text = "";
+                txtbx_input_value_2.Text = "";
+                txtbx_input_value_3.Text = "";
+                txtbx_input_value_4.Text = "";
+                txtbx_input_value_5.Text = "";
 
-            txtbx_result_1.Text = "";
-            txtbx_result_2.Text = "";
+                txtbx_result_1.Text = "";
+                txtbx_result_2.Text = "";
 
 
-            lbl_input_value_1.Visible = false;
-            lbl_input_value_2.Visible = false;
-            lbl_input_value_3.Visible = false;
-            lbl_input_value_4.Visible = false;
-            lbl_input_value_5.Visible = false;
-            txtbx_input_value_1.Visible = false;
-            txtbx_input_value_2.Visible = false;
-            txtbx_input_value_3.Visible = false;
-            txtbx_input_value_4.Visible = false;
-            txtbx_input_value_5.Visible = false;
-            lbl_mertekegyseg_1.Visible = false;
-            lbl_mertekegyseg_2.Visible = false;
-            lbl_mertekegyseg_3.Visible = false;
-            lbl_mertekegyseg_4.Visible = false;
-            lbl_mertekegyseg_5.Visible = false; 
-            lbl_result_1.Visible = false;
-            lbl_result_2.Visible = false;
-            txtbx_result_1.Visible = false;
-            txtbx_result_2.Visible = false;
-            lbl_output_measure_1.Visible = false;
-            lbl_output_measure_2.Visible = false;
-
+                lbl_input_value_1.Visible = false;
+                lbl_input_value_2.Visible = false;
+                lbl_input_value_3.Visible = false;
+                lbl_input_value_4.Visible = false;
+                lbl_input_value_5.Visible = false;
+                txtbx_input_value_1.Visible = false;
+                txtbx_input_value_2.Visible = false;
+                txtbx_input_value_3.Visible = false;
+                txtbx_input_value_4.Visible = false;
+                txtbx_input_value_5.Visible = false;
+                lbl_mertekegyseg_1.Visible = false;
+                lbl_mertekegyseg_2.Visible = false;
+                lbl_mertekegyseg_3.Visible = false;
+                lbl_mertekegyseg_4.Visible = false;
+                lbl_mertekegyseg_5.Visible = false;
+                lbl_result_1.Visible = false;
+                lbl_result_2.Visible = false;
+                txtbx_result_1.Visible = false;
+                txtbx_result_2.Visible = false;
+                lbl_output_measure_1.Visible = false;
+                lbl_output_measure_2.Visible = false;
+            }
             alakzat = combo_alakzatok.SelectedItem.ToString();
             
             makeinputfields();
         }
 
+        //A kiválasztott alakzathoz tartozó mezők, szövegek és kép megjelenítése
         private void makeinputfields()
         {
+            
             switch (alakzat)
             {
                 case "Háromszög":
@@ -838,6 +846,7 @@ namespace TerFelSzoft
             }
         }
 
+        //Kiválasztott alakzat kiválasztott oldalának kiemelése 
         private void txtbx_input_value_1_Enter(object sender, EventArgs e)
         {
             switch (alakzat)
